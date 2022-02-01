@@ -39,3 +39,5 @@ Feelings:	1
 Current Goals:
 - Wyrównac zaległości w życiu
 - Podnieść Pogodę do optymalnej.
+- Testu UAT - internal
+- Uruchomić Proda
