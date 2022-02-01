@@ -1,6 +1,4 @@
-Kim jesteśmy: Sobą 
-To jest:  Neuronet
-Ja to: 1204403022453
+Witaj w moim Neuronecie 1204403022453
 Mój serwer, moje zasady a więc:
 - zakaz redundancji informacji (język nam to umozliwi - słownik będzie ogólnodostępny).
 - zakaz prób łamania prywatnych zabezpieczeń innych Userów.
