@@ -10,3 +10,7 @@ Answers
 
 
 TOSO: make is simple, universa, reliable, 
+
+
+Initiating master flood.
+Notes status: Prod.
