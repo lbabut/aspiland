@@ -1,8 +1,5 @@
 Mama: jak to przeczytasz, to poproś Tatę, żeby mi napisał (ale nie dzwonił, bo wyłączyłem telefon) czy znalazł instrukcję od Pieca
 Adas, to jest dla Ciebie plik słownika: https://dev.azure.com/aspiland/_git/LukaszBabut?path=/MojeRzeczy/DlaAdasiaSlownik.txt
 509640980983343EErte: jaka u Ciebie Pogoda? Kiedy synkujesz swoje repo?
-Sprawdziłem:
-Status: 1
-Szyfrowanie: 1
-
-Dajcie poleżeć :-* nie dzwońcie już do mnie dziś.
+Lu:Dajcie poleżeć :-* nie dzwońcie już do mnie dziś.
+M: u mnie działa.
