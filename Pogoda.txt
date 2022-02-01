@@ -1,22 +1,11 @@
-TODO
-słownik
-parametry
-wartosci
-projekty potrzbne do wyliczenia
-
-Cel: Umeć odpowiedziec Adasiony na pytanie "jak się czujesz"
-
-
 DxC_Teams: 1
-DxC_Outlook: 0
-FB: 0
-Google: 0
-SMS: 0
-Call: 0
-EmergencyContact: Adaś
+DxC_Outlook: 1
+FB: 1
+Google: 1
+SMS: 1
+Call: 1
+EmergencyContact: Me
 Notes: safe
-
-Szczegóły dla tych, co "sie o mnie martwią"
 Air	1
 Water	1
 Food	1
@@ -29,7 +18,7 @@ Health	0
 Personal security	1
 Financial security	1
 Family	0
-Friendship	0
+Friendship	1
 Trust	1
 Acceptance	1
 Love	1
@@ -37,19 +26,16 @@ Learning	1
 Beauty	0
 PersonalIndependence	1
 Create	1
-Drugs	0
-Party	0
+Drugs	1
+Party	1
 Chill	0
 FullSpeedBrain	1
 Mainchannel: 1
-CacheEmpty	0
-Work:	0
-Feelins:	0
+CacheEmpty	1
+Work:	1
+Feelings:	1
 
 
 Current Goals:
 - Wyrównac zaległości w życiu
-- Usunąć przeszkody w rozpoczęciu pracy dla DxC o 9:00
-- Zaktualizowac pogodę w Neuronecie [jak sie da]
-- Skończyć pracę dla DxC na dziś.
 - Podnieść Pogodę do optymalnej.
