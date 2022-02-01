@@ -1,5 +1,5 @@
-Mamo, jak to przeczytasz, to poproś Tatę, żeby mi napisał (ale nie dzwonił, bo wyłączyłem telefon) czy znalazł instrukcję od Pieca
-Adasiu, to jest dla Ciebie plik słownika: https://dev.azure.com/aspiland/_git/LukaszBabut?path=/MojeRzeczy/DlaAdasiaSlownik.txt
+Mama: jak to przeczytasz, to poproś Tatę, żeby mi napisał (ale nie dzwonił, bo wyłączyłem telefon) czy znalazł instrukcję od Pieca
+Adas, to jest dla Ciebie plik słownika: https://dev.azure.com/aspiland/_git/LukaszBabut?path=/MojeRzeczy/DlaAdasiaSlownik.txt
 Kaczor, jaka u Ciebie Pogoda? Kiedy synkujesz swoje repo?
 Sprawdziłem:
 Status: 1
