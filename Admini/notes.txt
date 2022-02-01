@@ -1,1 +1,3 @@
 Zatwierdzam UAT. Przejmuję obserwację.
+
+Robiliśmy crashtest.
