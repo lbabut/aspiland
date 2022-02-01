@@ -1,3 +1,12 @@
+TODO
+słownik
+parametry
+wartosci
+projekty potrzbne do wyliczenia
+
+Cel: Umeć odpowiedziec Adasiony na pytanie "jak się czujesz"
+
+
 DxC_Teams: 1
 DxC_Outlook: 0
 FB: 0
