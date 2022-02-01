@@ -28,7 +28,7 @@ PersonalIndependence	1
 Create	1
 Drugs	1
 Party	1
-Chill	0
+Chill	1
 FullSpeedBrain	1
 Mainchannel: 1
 CacheEmpty	1
