@@ -1,1 +1,7 @@
-Neuronet 120440302245
+Moja Pogoda: 
+Jestem Tu i Teraz: w Sivle, opierdalam się :-) Działa, jak marzenie! Dołączam UAT'y
+Moje myśli sa dobre: 1
+Jestem bezpieczny: 1
+Coś muszę: 0
+Czy ktoś na mnie patrzy: 0
+Kontakt do Admina: admin@lukaszbabut.info
