@@ -1,4 +1,4 @@
-Kim jesteśmy? Sobą
+Kim jesteśmy? Sobą 
 To jest Neuronet (jedna z jego cześci), ta o której mogę tu opowiedzieć.
 
 O mnie: jestem userem 1204403022453
