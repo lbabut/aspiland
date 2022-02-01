@@ -1,0 +1,41 @@
+Teams DxC: Busy
+FB: Unmonitored
+Google: Unmonitored
+SMS: Please Don't
+Call: Please Don't
+Emergency Contact: Adaś
+Server Parameter:	
+LastUpdate 202202010841 Sivle. Notes safe. Prod version.
+Air	1
+Water	1
+Food	1
+Sex	1
+Sleep	0
+Clothes	0
+Shelter	1
+Intimacy	11
+Health	-1
+Personal security	1
+Financial security	1
+Family	-1
+Friendship	-1
+Trust	1
+Acceptance	1
+Love	1
+Learning	1
+Beauty	0
+PersonalIndependence	1
+Create	1
+Drugs	0
+Party	0
+Chill	0
+Lags	-1
+Place Of Existance	Neuronet
+Cache memory Empty	No
+Work	Yes
+Feelins index	1
+Current Goals:
+- Wyrównac zaległości w życiu
+- Remove ostacles to start work at 9
+- Increase Server's weather
+- update status next possible time
