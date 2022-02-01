@@ -261,3 +261,6 @@ Zrobiłem go tak, żebyś miał dostęp do wszystkich rzeczy, z którymi chcę s
 Tu najszybciej znajdę wiadomość od Ciebie i najszybciej odpowiem.
 Tu najcześciem mam czas dla Ciebie.
 Przed wejściem spradź pogodę: [Link do pogody]
+
+Czyszczę stream.
+
