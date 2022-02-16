@@ -1,4 +1,7 @@
 ⵥ:ⵥ
 LU: Hello ;-)
 AKA(ENG): Hello
-AKA(NOR): 
+AKA(NOR): Is it 1?
+Admin: 1
+Init.............
+Status: 
