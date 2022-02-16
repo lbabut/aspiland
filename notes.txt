@@ -3,5 +3,7 @@ LU: Hello ;-)
 AKA(ENG): Hello
 AKA(NOR): Is it 1?
 Admin: 1
-Init.............
-Status: 
+Dimentions connected: 3
+Time dimentions: 1
+Planets connected: 1
+Status: https://dev.azure.com/aspiland/_git/Neuronet?path=%2Fstatus.txt
