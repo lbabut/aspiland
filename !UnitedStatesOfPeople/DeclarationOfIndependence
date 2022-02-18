@@ -16,95 +16,18 @@ citizen, inhabitant, civilian, civil, freeman, denizen is called "User".
 The user's signature is every commit to this repository.
 
 Aspieland has no territory yet.
-Every state-matters can be handled in any of the Embassies:
+Every state-matters can be handled in any of the official Embassies:
 https://dev.azure.com/aspiland/_git/Neuronet?path=/Embassies
-Every Embassy has a list of available matters to handle.
-
-
+Every Embassy has a list of available matters and assets to handle.
 
 
 The Aspieland state has following rules:
-1) Absolute speach freedom
-2) 
+1) Absolute speach freedom.
+2) The Law in the stste is the following file and configuration of this DevOps.
+3) User can only be invited by another User.
+4) User cannot harm any ohr live unless feeds or defending himself.
+5) User cannot lie to anothr User.
 
-The Law in the stste is the following file and configuration of this DevOps
 
 
-
-W kraju obowiązuje absolutna wolność słowa.
-Każdy może złożyć wniosek o nadanie obywatelstwa
-Zasady tworzenia prawa okresla konfiguracja repozytorium kodu 
-Obowiązuje wersja Prod.
-Obowiązuje, jeśli wysztkie jej wersje są takie same i pointują w te same repo . Wygrywa najstarsza wersja
-Konstytucja jest po angielsku (zdefiniowanym jako "xxx"
-  Wersja dostępna do odczytu dla wszystkich (dziennik ustaw :-) jest na onion wiki pod adresem
-User / halo do konta "publicznego"
-Szkodzenia życiu na planecie Ziemia 
-Obrażania się = utrata obywatelstwa, wydalenie z kraku, śmierć.
-Głosowanie przez pool nie equesty, decyduje większość
-Usera się zdobywa przez nadanie dowolnego admina
-Na początku ja będę jedynym userem,
-Dodam pierwszych dwóch administratora
-admina może zabrać grupa Nad adminów
-Any Global Admin can add Global Admin
-Lista adminów jest trzecią konstytucji
-Status contrubutor - napiszemy już razem.
-Jak i cała resztę.
-Każdy obywatel ma prawo do własności przedmiorów materialnych 
-Nie da się obrazić czyichś uczuć. Mamy to w dupie.
-Any "Language" that is fully understandable and tranlatable to "basic language"
-Każdy global admin jmusi utrzymywać conajmniej dwie kopie konstytucji
-Państwo ma prawo do obrony własnego terytorium przed nieobywatelami
-każdy może requestowac dodanie do grupy
-cr do puszrequesta w VacatioLegis odwleka jego termin
-Zakaz: ocenianie bez jasnych kryteriów
-Git documentation version XXX is integral part of Constitution
-DevOps docimentation version XXX is integral part of Constitution
-nothing is a cringe. including public masturbation
-It's fine to postpone duties, but n longer than promiced date + 3 days
-It's impossible to offend the User by another User
-Dopuszcza się deficyt budżetowy w wysokości 0 Hajsów
-Walutą jest Hajs 
-Kurs wymiany hajsa reguluje...
-Pieniądze (wszystkie są zapisane w konstytucji)
-Jeśłi zadłużenie usera wyniesie ponad X - traci obywatelstwo a jego własności przejmuje budżet
-Obrona praw i dobrostanu userów
-Deportacja
-Utrata obywatelstwa
-Ban czasowy
-Usunięcie z grup
-Śmierć
-Kara: nie dostaje hajsu co miesiąc przez okres (x)
-Zasady współżycia społecznego
-, zapoznanie nowej osoby
-, konflikt w przestrzeni publicznej [np. Ktoś blokuje Ci przejście]
-Sądy:
-Osobne repozytorium
-DevOps
-Kwestia sporne (jak CRy) - jak coś jest sporne, to konstytucji jest chujowa.
-(Potem kupimy se serwery )
-Dostępn do informacji niejawnych
-Każdy obywatel może wpisać swoje rzeczy jako własności, jeśli chce by państwo gwarantowało ich bezpieczeństwo
-Każdy ma prawo do życia i śmierci
-Każdy płaci podatki w dowolnej (1)
-Wysokośck
-Każdy obywatel dostaje od państwa 1 Hajs miesięcznie - zaliczkowan
-Waluta
-Budżet
-Podatki
-Obywatel = user tego repo
-Stosunki międzynarodowe:
-Wojsko, policja, etc.
-Prawo budowlane :-)
-Zakazy:
-Terytorium: kupimy, może być rozproszone
-Defiicje [co to jest jest własnośc, co to jest rzecz materialna, etc.]
-Prawa usera określa: "tbd"
-zmuszanie do czegokolwiek, wywoływanie presji czasu
-Fizycznego kontaktu bez zgody wszystkich dotykanych
-Emitowania uciążliwych bodźców ( hałas, smrody) bez zgody narażonych
-Reklamy zakazane
-Przeszkadzanie zakazane
-Poganianie, przeszkadzanie
-Usuwania informacji z repo lub devops
-Kłamania Userom
+a
