@@ -1,0 +1,83 @@
+basic Constitution
+basic - the source of the law is this opesource code repository, located at:
+basic (At least two copies)
+basic And a photo of its physical copy placed in ...
+basic Saved to file (repo path)
+basic The citizen's signature is an entry in the repo
+basic There is absolute freedom of speech in the country.
+basic Anyone can apply for citizenship
+basic Authorization rules are determined by the configuration of the code repository
+basic Version Prod.
+basic Valid if all its versions are the same and point to the same repo. The oldest version wins
+basic The Constitution is in English (defined as "xxx"
+basic Readable version for everyone (log set :-) is on the onion wiki at
+basic User / halo to the "public" account
+basic Damage to life on planet earth
+basic Abuse = loss of citizenship, expulsion from Krakow, death.
+basic Voting by the pool is not equesty, majority decides
+Basic Usera is obtained by assigning any admin
+basic In the beginning I'll be the only user
+basic I will add the first two administrator
+Basic admin can be taken by the Nad admins group
+basic Any Global Admin can add Global Admin
+basic The admin list is the third of the constitution
+basic Status contrubutor - we will write together.
+basic As well as the rest.
+basic Every citizen has the right to the ownership of material plots
+basic It's impossible to offend someone's feelings. We don't give a shit.
+basic Any "Language" that is fully understandable and tranlatable to "basic language"
+basic Every global admin must maintain at least two copies of the constitution
+basic The state has the right to defend its own territory against non-citizens
+basic, anyone can request to be added to the group
+basic cr do puszrequesta in VacatioLegis is postponing its deadline
+basic Prohibition: judging without clear criteria
+basic Git documentation version XXX is integral part of Constitution
+basic DevOps docimentation version XXX is integral part of Constitution
+basic nothing is a cringe. including public masturbation
+basic It's fine to postpone duties, but n longer than promiced date + 3 days
+basic It's impossible to offend the User by another User
+Budget A budget deficit of 0 Hajs is allowed
+currency The currency is Hajs
+currency The currency exchange rate regulates ...
+currency Money (they are all written in the constitution)
+Economy If the user's debt exceeds X, he loses his citizenship and his property is taken over by the budget
+Goals Defense of user rights and well-being
+Penalties Deportation
+Penalties Loss of citizenship
+Punishments Ban Timer
+Penalties Removal from groups
+Death Penalties
+Penalties Kara: does not get cash every month for a period of (x)
+rulezz Principles of social coexistence
+rulezz, introducing a new person
+rulezz, conflict in public space [e.g. Someone is blocking your passage]
+Courts Courts:
+Courts Separate repository
+DevOps Courts
+Courts Disputed issue (like CRy) - if something is in dispute, the constitution is shit.
+sec (Then we'll buy se servers)
+sec Access to classified information
+tax Every citizen can register his belongings as property if he wants the state to guarantee their safety
+tax Everyone has the right to life and death
+tax Everyone pays taxes at any (1)
+tax Height
+tax Each citizen receives 1 Hajs a month from the state - in advance
+Title Currency
+Title Budget
+Title Taxes
+Title Citizen = user of this repo
+title International Relations:
+Title Military, police, etc.
+Title Building Law :-)
+Title Prohibitions:
+Title Territory: we will buy, it can be scattered
+title Definitions [what is a property, what is a material thing, etc.]
+User The user rights specify: "tbd"
+prohibition of forcing to do anything, creating time pressure
+prohibition of Physical contact without consent from all touched
+ban on Emitting nuisance stimuli (noise, stinks) without the consent of the exposed
+prohibition Ad banned
+prohibition Disturbing prohibited
+prohibition Rushing, disturbing
+prohibition of removing information from repos or devops
+Prohibition of Lying to Users

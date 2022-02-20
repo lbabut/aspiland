@@ -1,0 +1,83 @@
+basic	Konstytucja
+basic	- źródłem prawa jest niniejsze repozytorium kodu opesource, umieszczone pod adresem:
+basic	(Co najmniej dwie kopie)
+basic	Oraz zdjęciem jej fizycznej kopii umieszczonej w...
+basic	Zapisanej w pliku (ścieżka repo)
+basic	Podpisem obywaleta jest zapis w repo
+basic	W kraju obowiązuje absolutna wolność słowa.
+basic	Każdy może złożyć wniosek o nadanie obywatelstwa
+basic	Zasady tworzenia prawa okresla konfiguracja repozytorium kodu 
+basic	Obowiązuje wersja Prod.
+basic	Obowiązuje, jeśli wysztkie jej wersje są takie same i pointują w te same repo . Wygrywa najstarsza wersja
+basic	Konstytucja jest po angielsku (zdefiniowanym jako "xxx"
+basic	  Wersja dostępna do odczytu dla wszystkich (dziennik ustaw :-) jest na onion wiki pod adresem
+basic	User / halo do konta "publicznego"
+basic	Szkodzenia życiu na planecie Ziemia 
+basic	Obrażania się = utrata obywatelstwa, wydalenie z kraku, śmierć.
+basic	Głosowanie przez pool nie equesty, decyduje większość
+basic	Usera się zdobywa przez nadanie dowolnego admina
+basic	Na początku ja będę jedynym userem,
+basic	Dodam pierwszych dwóch administratora
+basic	admina może zabrać grupa Nad adminów
+basic	Any Global Admin can add Global Admin
+basic	Lista adminów jest trzecią konstytucji
+basic	Status contrubutor - napiszemy już razem.
+basic	Jak i cała resztę.
+basic	Każdy obywatel ma prawo do własności przedmiorów materialnych 
+basic	Nie da się obrazić czyichś uczuć. Mamy to w dupie.
+basic	Any "Language" that is fully understandable and tranlatable to "basic language"
+basic	Każdy global admin jmusi utrzymywać conajmniej dwie kopie konstytucji
+basic	Państwo ma prawo do obrony własnego terytorium przed nieobywatelami
+basic	każdy może requestowac dodanie do grupy
+basic	cr do puszrequesta w VacatioLegis odwleka jego termin
+basic	Zakaz: ocenianie bez jasnych kryteriów
+basic	Git documentation version XXX is integral part of Constitution
+basic	DevOps docimentation version XXX is integral part of Constitution
+basic	nothing is a cringe. including public masturbation
+basic	It's fine to postpone duties, but n longer than promiced date + 3 days
+basic	It's impossible to offend the User by another User
+Budżet	Dopuszcza się deficyt budżetowy w wysokości 0 Hajsów
+currency	Walutą jest Hajs 
+currency	Kurs wymiany hajsa reguluje...
+currency	Pieniądze (wszystkie są zapisane w konstytucji)
+Economy	Jeśłi zadłużenie usera wyniesie ponad X - traci obywatelstwo a jego własności przejmuje budżet
+Goals	Obrona praw i dobrostanu userów
+Kary	Deportacja
+Kary	Utrata obywatelstwa
+Kary	Ban czasowy
+Kary	Usunięcie z grup
+Kary	Śmierć
+Kary	Kara: nie dostaje hajsu co miesiąc przez okres (x)
+rulezz	Zasady współżycia społecznego
+rulezz	, zapoznanie nowej osoby
+rulezz	, konflikt w przestrzeni publicznej [np. Ktoś blokuje Ci przejście]
+Sądy	Sądy:
+Sądy	Osobne repozytorium
+Sądy	DevOps
+Sądy	Kwestia sporne (jak CRy) - jak coś jest sporne, to konstytucji jest chujowa.
+sec	(Potem kupimy se serwery )
+sec	Dostępn do informacji niejawnych
+tax	Każdy obywatel może wpisać swoje rzeczy jako własności, jeśli chce by państwo gwarantowało ich bezpieczeństwo
+tax	Każdy ma prawo do życia i śmierci
+tax	Każdy płaci podatki w dowolnej (1)
+tax	Wysokośck
+tax	Każdy obywatel dostaje od państwa 1 Hajs miesięcznie - zaliczkowan
+Title	Waluta
+Title	Budżet
+Title	Podatki
+Title	Obywatel = user tego repo
+title	Stosunki międzynarodowe:
+Title	Wojsko, policja, etc.
+Title	Prawo budowlane :-)
+Title	Zakazy:
+Title	Terytorium: kupimy, może być rozproszone
+title	Defiicje [co to jest jest własnośc, co to jest rzecz materialna, etc.]
+User	Prawa usera określa: "tbd"
+zakaz	zmuszanie do czegokolwiek, wywoływanie presji czasu
+zakaz	Fizycznego kontaktu bez zgody wszystkich dotykanych
+zakaz	Emitowania uciążliwych bodźców ( hałas, smrody) bez zgody narażonych
+zakaz	Reklamy zakazane
+zakaz	Przeszkadzanie zakazane
+zakaz	Poganianie, przeszkadzanie
+zakaz	Usuwania informacji z repo lub devops
+Zakaz	Kłamania Userom

@@ -1,0 +1,19 @@
+Epic	    Story	Acceptance Citeria
+Technical	As the only Global Admin member I want my privlidges to be automatically inherited by random member of Constitution Admins in case of my extrensive inactivity to ensure state continuity [with recurrency]	State continuity is ensured
+Technical	As a User I want to have possibility to be automatically informed about  upcomming changes to keep up.	
+Technical	Jako Economy Admin I want all Users to get Hajs monthly to be able to pay tax	
+Technical	e	
+General	As a User I want to properly understand my rights and duties without doubts to ensure state continuity	
+Technical	As Global Admin I want to automatically detect contraditories in PushRequests to keep up	
+Technical	As a User I want VacatioLegis to be maintaind automatically to protect against fraud	
+Technical	As a User I want the Constitution to be automatically translated to my favourite language to keep up	
+General	As a user I want to have a common set of rules on how to interact with others to keep up	
+General	As a User I want to have a detailed list of forbidden emissions (to loud, to bright, to close to me...) to keep up	
+General	As a I want my Constitution to be safe and reliable to ensure state continuity	
+General	As user i want my personal data to be stored securely as a part of constitution	
+General		
+General	As a User I want to have HOTO document describing in details how to procced with things	
+General	Wniosek o nadanie obywatelstwa: zgody rodo itepe	
+General	As a user I want to be able to request user in my native language	
+Technical	As a user I want to be able to automatically get to know to eweryone that I don't want to be disturbed 	
+Technical	As a user I want to have reliable and secure access to my files	

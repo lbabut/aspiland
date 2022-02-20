@@ -1,0 +1,12 @@
+Location: Warszawa, Wawer
+Ambassador: NONE
+Official Callendar: NONE
+
+Features:
+- Immgration Office
+
+Services:
+- Money Exchange 
+    (no rates)
+- Goods trading 
+    (no offers)
