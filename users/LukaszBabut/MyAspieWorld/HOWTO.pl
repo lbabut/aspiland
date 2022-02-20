@@ -1,11 +1,14 @@
 Życie wśród małp
 	Tak, tak. Przysżło Ci żyć wśród osobników obcego gatunku. Nie będzie łatwo.
 Ale spróbuję dać Ci kilka wskazówek, dzięki którym osiągnąłem znośny poziom niezadowolenia.
+
 1)	To oni są „Ci inni”.
 2)	To Ty jesteś w tym wszystkim jedyną rzeczą, która się liczy.
 3)	Małpy nie wiedzą, że są głupie i nie są w stanie tego zrozumieć. 
 4)  Nie udawaj, że Ci przykro, jak skrzywdzisz małpę. Nie jest tego warta.
 5)  It's ok to lie to a monkey.
+
+
 Tresura
     jakie niegrzeczne dziecko. zupełnie nie umie się zachować. A powiedz wierszyk.....
     Małpy od zawsze próbowały zrobić z nas inne małpy. Nic innego nie potrafią.
@@ -14,43 +17,52 @@ Tresura
     Bić, katować, maltretować. Jak w cyrku.
     Aż straumatyzowani zaczęliśmy robić im te sztuczki.
     Jebac ich!
+
+
 Rodzice
-	
-	To całkiem przejebany temat. Trudny, bolesny i jeśli nie masz wewnętrznego przymusu zmierzenia się z nim, po prostu przestań ją traktować poważnie.
+	To całkiem przejebany temat. Trudny, bolesny i jeśli nie masz wewnętrznego przymusu zmierzenia się z nim, 
+    po prostu przestań ją traktować poważnie.
 Widzę jednak, że czytasz dalej. Też bym tak zrobił.
 	No więc zacznijmy od próby opisu sytuacji:
 Osoba, która miała Cię przygotować do życia na świecie okazała się głupsza od Ciebie, jak miałeś jakieś 5 lat.
 Zawiodły wszelkie próby komunikacji, więc wpadłeś na pomysł udawania czegoś innego przed nią - tak było łatwiej.
 W efekcie nie masz zatem pojęcia ani kim jesteś ani jak żyć wśród małp a ona ma cię za wariata.
 Na to wszystko nakładają się uczucia. Twoje uczucia. Jej uczucia...
-Tak, masz uczucia. Tylko boisz się używać.
+Tak, masz uczucia. Tylko nie umiesz ich jeszcze nazywać.
 Ale nie takie, o których czytałeś wiersze, chyba, że przejebałes się przes Sylwię Plath czy coś jej kalibru.
 Musiałbyś to jednak zrobić w wieku 3 lat, kiedy małpy uczą się takich rzeczy. 
 A w zasadzie to oni musieliby to zrobić, zanim zaczęli Cię kochać po małpiemu - co i tak by nic nie dało.
 Ostrzegałem, że trudny temat.
+
 Dom
    znajdź sobie miejsce, w którym nic nie przeszkodzi ci w byciu sobą.
    Słuchanie tej samej piosenki przez całą dobę, ma tam być równie normalne, jak walenie konia.
    jeśli to niemożliwe, zacznij szukać rozwiązania od nowa.
    To jest sprawa najważniejsza.
+
 Oni patrzą!
-    I chuj. Jak pies/kot/mrówka na Ciebie patrzy, to też uważasz, że musisz się zachowywać stosownie? Bo może jej będzie przykro? LOL!!!
+    I chuj im na grób. Jak pies/kot/mrówka na Ciebie patrzy, to też uważasz, że musisz się zachowywać stosownie? 
+    Bo może jej będzie przykro? LOL!!!
     Przemyśl, jakie to głupie.
     Kto i kiedy kazał Ci tak robić?
     Po co?
-    wiem, że tak naprawdę masz w dupie czy małpie jest przykro - to tresura każe Ci brać to pod uwagę.
+    wiem, że tak naprawdę masz w dupie czy małpie jest przykro - to tresura (maska) każe Ci brać to pod uwagę.
+
+
 Czy robię to dobrze?
     zasadniczo tak. Who cares?
+
 Nowe sytuacje
      Przygotuj się najlepiej, jak to możliwe. Zapisz mapy, trasy, godziny odjazdów, przyjazdów.
      Obejrzyj okolicę w streetwiew.
      Będzie mniej straszna
      W uszy słuchawki - trochę odstraszają obce małpy od prób powiedzenia ci czegoś nieprzydatnego.
+
 Co odróżnia nas od małp
      Czujemy więcej.
      Myślimy lepiej.
-     Mamy inne uczucia.
-     
+     Nasze wnętrza są większe.
+
 Wkurwiacze
     bodźce sensoryczne są super! Jak narkotyki. Przedawkujesz, nie balujesz.
     Unikaj przedawkowania.
@@ -59,11 +71,13 @@ Wkurwiacze
     Małpy tego nie robią, bo nie czują [? chuj je w sumie wie czemu]
     Serio jest Ci "głupio" zdjąć kurtkę w sklepie? No bo "jak to wygląda" :-) 
     Bodźcem sensorycznym jest też stres - unikaj go. Nie mścij sie na własym ciele za głupotę otaczających cie małp!
+
 Rozpraszacze
     miej notes pod ręką. Notuj, co i kiedy ci rozjebało proces myśłowy. 
     Eliminuj przyczyny. Dbaj o kompfort. Nawet jeśli to oznaczam ,że małpy będą się śmiały.
     To jest twój świat. Nie małpi.
     Zazwyczaj pomaga zmiana ustawień telefonu/komputera/biurka...
+
 Psychotesty
    przypuszczam, że zanim tu trafiłeś, zrobiłeś jeden z tych durnych testów prychlogicznych dla małp?
 weśmy jakiś randomowy "na warsztat". Ot na przykład ten:  https://www.diagnostyka-umyslu.pl/spektrum-autyzmu-test
@@ -117,25 +131,32 @@ weśmy jakiś randomowy "na warsztat". Ot na przykład ten:  https://www.diagnos
        Metodą idealną.
        Odpierdolcie się :-)]
 Znudziło mi się z tym tstem - just hope you're getting the point now.
+
+
 Przemęczenie
     mamy też wady - nasze świadomości zostały umieszczone w ciałach, które nie do końca nadają się do potrzeb.
     Sposób w jaki funkcjonujemy wykańcza mózg. Zużywamy neuroprzekażniki, jak ruski czogł ropę.
     Patrz: bipolar dosorder, depresja, etc.
     Zwyczajnie zajeżdzamy sprzęt - pewnie przez ciagle działający emulator małpy. Ale to tylko teoria.
     Nadal mam z tym problem i szukam rozwiązań.
+
 Wspomnienia i pamiętać
     ileż to razy przeżywałeś w myślach sceny, w których dałeś dupy jako małpa? 
     okurwa.. ale się zbłaźniłem na imprezie/w pracy/ szkole....
     Lol... to twój emulator małpy się zbłaźnił. Nie może być doskonały - to tylko emulator.
-    Zbudowałeś go zgadująć "czego byćmoże doświadcza małpa w tej sytuacji" - powinieneś byc dumny z osiągnięcia, uznać je za ukończone i się nim znudzić.
+    Zbudowałeś go zgadująć "czego byćmoże doświadcza małpa w tej sytuacji" - powinieneś byc dumny z osiągnięcia, 
+    uznać je za ukończone i się nim znudzić.
     Masz o czym myśleć :-)
+
+
 Socializing
     nie, nie będzie o spotykaniu się z małpami.
     Jest nas mnóstwo. Mamy internet. Możemy miec ze sobą relacje na zupełnie nowym, nieznamym w hostori poziomie i wymiarach.
     Budować więzi, które nie mają małpiej nazwy.
     Mieć do siebie nawzajem uczucia, które nie mają małpiej nazwy.
     Mieć poetów naszego języka. 
-    Możemy wszystko, co chcemy.
+    Możemy wszystko, co tylko zechcemy.
+
 Maska
     Zdejm jom. Nie bąć małpom.
     Czuj, myśl, twórz, żyj! 
@@ -143,8 +164,10 @@ Maska
 Lęk
     każdy by sie bał, żyjąc w ten sposób.
     Przestań udawać małpę.
+
 Dysonand poznawczy
-    przeczytałem gdzieś, że "autystyk musi być przygotowany i nie wolno mu przeszkadzać'... serio? A jak przestanie udawać małpę?
+    przeczytałem gdzieś, że "autystyk musi być przygotowany i nie wolno mu przeszkadzać'... serio?
+    A jak przestanie udawać małpę?
     
 I chuj :-)
 A teraz dodaj cos od siebie. 
@@ -152,15 +175,15 @@ Skomituj.
 Podziel się z nami.
 Jesteś w domu.
 
-introductinToTheMonkey.txt
--40
-/HOWTOs/introductinToTheMonkey.txt
-View
+
+No to czas na odrobinę "instrukcji obsługi"
+
+1) Zapoznawanie sie z nowa małpą:
 To ochydne, ale czasem niezbedne
 Na początek:
 - małpy uważają za istotne, jakie wywrzesz na nich "pierwsze wrażenie" - przemyśl swoje cele i dostosuj rytułał.
 - jest prawie niemożliwyn nadpisanie "pierwszego wrażenia" u małp.
-- ważne, zebyś unial to robić dobrze, więc ćwicz często
+- ważne, zebyś umial to robić dobrze, więc ćwicz często
 Niestety jest wiele opcji i wariantów "powita". Zdążyłem przeanalizować tylko te:
 Zupełnie obca malpa + nie zostałeś przedstawiony
 1) Podejdź do małpy
@@ -173,16 +196,16 @@ Zupełnie obca malpa + nie zostałeś przedstawiony
 Małpa, którą dobrze znasz
 - tak Ci się wydaje... to nie takie proste. Małpy są tu nieprzewidywalne
 - nie ufaj im a jednocześnie nie pozwól tego po sobie poznać..
-Dobra, doczytaleś aź dotąd, więc przestanę pierdolić i przejdę do konkretów. To są świnie. Zwierzęta. Masz ich uzywać.
+
+Dobra, doczytaleś aź dotąd, więc przestanę pierdolić i przejdę do konkretów. To są tępe roboty, masz ich uzywać a nie szanować.
 Zacznij naukę od tego: https://en.wikipedia.org/wiki/Neuro-linguistic_programming
 Resztę znajdziesz w necie. Internet zrobili tacy jak my. Wciąż ma zasoby i ziomków.
 Tylko coraz trudniej ich znaleśź.
-wierzm, ze sobie poradzisz.
+wierzę, ze sobie poradzisz.
 
-JournetToNewMonkeyDesignedPlace
--108
-/HOWTOs/JournetToNewMonkeyDesignedPlace
-View
+
+
+
 Małpie miasto
      poniższe przyda ci się tylko przed pozbyciem się małpiego warunkowania (tresury)
 1) Przygotuj się
@@ -192,11 +215,10 @@ Małpie miasto
     = mapa skąd 
         = mapa do kąd
             = zapadowe połącznie
-            ---([ całość jest z grubsza faktalna, ćwicz dużo. Zwiedzaj. WARTO!] )
+            ---([ całość jest z grubsza fraktalna, ćwicz dużo. Zwiedzaj. WARTO!] )
 2) Odizoluj się
-    - odzienie szaleńca ( ale "nie zabardzo" - żeby brały Cię za outsidera, ale wciąż z własngo stad
+    - odzienie szaleńca ( ale "nie zabardzo" - żeby brały Cię za outsidera, ale wciąż z "tych swoich")
     - słuchawki w uszy (migające wchuj!) do unikania kontantów werbalnych-audio 
-    
     
 3) Na miejscu
     Najwaźniejsze, to zachować spokój. 
@@ -204,10 +226,13 @@ Małpie miasto
     Jak zrobisz powyższe, to instrukcje przestaną być potrzebne.
     
 4) Zdobywaj 
-   nieżadko mi się zdażało pozytywne zaskoczenie. Warto obejrzeć małpie gaje. Warte uwagi są na przykład sposoby, na które próbują realizować architekturę ;-)
+   nieżadko mi się zdażało pozytywne zaskoczenie. Warto obejrzeć małpie gaje. Warte uwagi są na przykład sposoby,
+    na które próbują realizować architekturę ;-)
     > fer: pozwolilo nawet jednemu z nas na zbudowaniw kilku rzeczy: https://en.wikipedia.org/wiki/Antoni_Gaud%C3%AD
-   Planeta też warta uwagi. Zwłaszcza [patrz, gdzie umarłem]
-xxx) Lista itemów, które warto rozważyć [TODO cleanup]
+   Planeta też warta uwagi. Zwłaszcza [patrz, gdzie umarłem] 
+
+
+Lista itemów, które warto rozważyć [TODO cleanup]
 Typ		Opis	Ile	lok									
 0gólne	x	Irenka	ok			Wyjazd:	4/30/2013	13:10	13:30	0:20			
 0gólne	x	podlać kwiatki	ok										
@@ -269,3 +294,9 @@ x		Do paznokci
 		- czekolada bądź substytut kaloryczno-energetyczny											
 		- apteczka (bez szaleństw, ale warto mieć bandaż, plaster, folię NRC)											
 		- piersióweczka (bo toast za zdobyty szczyt być powinien)											
+
+
+Będzie więcej ale nie dziś :-)
+
+
+
