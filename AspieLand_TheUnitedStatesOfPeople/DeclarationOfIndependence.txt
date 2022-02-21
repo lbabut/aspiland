@@ -5,7 +5,7 @@ Surce of the latest copy always be found here:
 https://dev.azure.com/aspiland/_git/Neuronet?path=/!UnitedStatesOfPeople/DeclarationOfIndependence
 
 Other copies in sync:
-[none], last sync: 2022-02-18 18:24
+[none], last sync: 2022-02-21 21:30
 
 In case of emergency, the list of physical copies belongs to Ambasadors:
 1) Łukasz Babut, last sync: yyyy-mm-dd hh:mm
