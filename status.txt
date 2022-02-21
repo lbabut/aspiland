@@ -1,5 +1,0 @@
-Online: 1
-Secured: 1
-Has backup: 1
-Admin is watching: 1
-Number of copies: 1
