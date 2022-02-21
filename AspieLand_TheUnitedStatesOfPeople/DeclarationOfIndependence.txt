@@ -8,7 +8,7 @@ Other copies in sync:
 [none], last sync: 2022-02-21 21:30
 
 In case of emergency, the list of physical copies belongs to Ambasadors:
-1) Łukasz Babut, last sync: yyyy-mm-dd hh:mm
+1) Łukasz Babut, last sync: 2022-02-21 21:30
 2)
 3)
 In case of incompability, oldest version wins.
@@ -18,7 +18,7 @@ United People Declaration of Independence is also known as Aspieland State.
 citizen, inhabitant, civilian, civil, freeman, denizen is called "User".
 The user's signature is every commit to this repository.
 
-Aspieland has no territory yet.
+Aspieland has no territory yet. Exists only in the Internet
 Every state-matters can be handled in any of the official Embassies:
 https://dev.azure.com/aspiland/_git/Neuronet?path=/Embassies
 Every Embassy has a list of available matters and assets to handle.
