@@ -2,10 +2,13 @@ Foreign Cash:
 20000 NOK
 10000 PLN
 1₪
+10000 DogeCoin
+0,005 BTC
+5 NMR
 
 Cars:
 BMW 218d Sport
 
 Real Estates:
 House in Warsaw (Wawer)
-Huse in Norway (Voss)
+House in Norway (Voss)
