@@ -1,5 +1,7 @@
 basic Constitution
 basic - the source of the law is this opesource code repository, located at:
+        https://aspiland@dev.azure.com/aspiland/Neuronet/_git/Neuronet
+
 basic (At least two copies)
 basic And a photo of its physical copy placed in ...
 basic Saved to file (repo path)
