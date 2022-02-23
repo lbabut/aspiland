@@ -1,36 +1,33 @@
-United People Declaration of Independence
+United States of Minds declaration of Independence
 
-The law of our Country is defined by this file.
-Surce of the latest copy always be found here:
+The law of our country is defined by this file.
+Source of the latest copy always be found here:
 https://dev.azure.com/aspiland/_git/Neuronet?path=/!UnitedStatesOfPeople/DeclarationOfIndependence
 
 Other copies in sync:
 [none], last sync: 2022-02-21 21:30
 
-In case of emergency, the list of physical copies belongs to Ambasadors:
+In case of emergency, the list of physical copies belongs to Ambassadors:
 1) Łukasz Babut, last sync: 2022-02-21 21:30
 2)
 3)
-In case of incompability, oldest version wins.
+In case of incompatibility, the oldest version wins.
 
 
-United People Declaration of Independence is also known as Aspieland State.
+The United States of Minds Declaration of Independence is also known as Aspieland State.
 citizen, inhabitant, civilian, civil, freeman, denizen is called "User".
 The user's signature is every commit to this repository.
 
-Aspieland has no territory yet. Exists only in the Internet
+Aspieland has no territory yet. Exists only on the Internet
 Every state-matters can be handled in any of the official Embassies:
 https://dev.azure.com/aspiland/_git/Neuronet?path=/Embassies
 Every Embassy has a list of available matters and assets to handle.
 
 
-The Aspieland state has following rules:
-1) Absolute speach freedom.
-2) The Law in the stste is the following file and configuration of this DevOps.
+The Aspieland state has the following rules:
+1) Absolute speech freedom.
+2) The Law in the state is the following file and configuration of this DevOps.
 3) User can only be invited by another User.
-4) User cannot harm any ohr live unless feeds or defending himself.
-5) User cannot lie to anothr User.
-
-
-
-a
+4) User cannot harm any life unless feeds or defends himself.
+5) User cannot lie to another User.
+6) Everything saved to this repository will remain eternal.
