@@ -1,5 +1,6 @@
 Welcome to Neuronet.
-Keep only ethernal files!
+Absolute freedom of speech and behaviour (https://dev.azure.com/aspiland/_git/Neuronet?path=/AspieLand_TheUnitedStatesOfPeople)
+Please keep only eternal and public data here.
 No redundancy allowed!
 
 Sever Status:
