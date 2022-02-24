@@ -8,6 +8,8 @@ Server Status:
 Main Admin: https://dev.azure.com/aspiland/_git/Neuronet?path=/users/LukaszBabut/About.Me
 UsersOnline:	7
 AdminsOnLine:	2
-ValidFrom: 2022-02-22 00:01
+AiOnLine:   1
+InstantRootMode:   1
+ValidFrom: 2022-02-24 08:52
 IsMaster: Yes
 OnLineCopies: 4
