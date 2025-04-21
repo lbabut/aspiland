@@ -1,11 +1,14 @@
 Location: Voss
+        : Finnesvegen 54
+        : 5704 Voss
+        : Norway
 
 Ambassador: 
 https://dev.azure.com/aspiland/_git/Neuronet?path=/users/LukaszBabut/About.Me
 
 
 Official Callendar: 
-https://calendar.google.com/calendar/embed?src=c_a16pmmak3cfb0sejdjqj6tqtkk%40group.calendar.google.com
+https://docs.google.com/spreadsheets/d/1GepemqcNVVTR_FDqBo8ccV4n4wmldbzwRray3YqIXm8/edit?usp=sharing
 
 Features:
 - Main Administration
@@ -17,3 +20,5 @@ Services:
     (no rates)
 - Goods trading 
     (no offers)
+- Safe House
+    (open 24/7 - see Official Callendar for details)
