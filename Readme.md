@@ -7,9 +7,9 @@ No redundancy allowed!
 Server Status:
 Main Admin:      tiamat@lukaszbabut.info https://dev.azure.com/aspiland/_git/Neuronet?path=/users/LukaszBabut/About.Me
 UsersOnline:	 4
-AdminsOnLine:	 1
+AdminsOnLine:	 2
 AiOnLine:        1
 InstantRootMode: 1
-ValidFrom:       2025-04-19 16:39
+ValidFrom:       2025-04-21 13:12
 IsMaster: Yes
 OnLineCopies: 1
