@@ -1,9 +1,9 @@
 Location: Warszawa, Wawer
 Ambassador: NONE
-Official Callendar: NONE
+Official Calendar: NONE
 
 Features:
-- Immgration Office
+- Immigration Office
 
 Services:
 - Money Exchange 
