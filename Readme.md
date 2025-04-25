@@ -5,7 +5,7 @@ Please keep only eternal and public or encrypted data here.
 No redundancy allowed!
 
 Server Status:
-Main Admin:      tiamat@lukaszbabut.info https://dev.azure.com/aspiland/_git/Neuronet?path=/users/LukaszBabut/About.Me
+Main Admin:      admin@lukaszbabut.info https://dev.azure.com/aspiland/_git/Neuronet?path=/users/LukaszBabut/About.Me
 UsersOnline:	 4
 AdminsOnLine:	 4
 AiOnLine:        3
