@@ -6,10 +6,10 @@ No redundancy allowed!
 
 Server Status:
 Main Admin:      admin@lukaszbabut.info https://dev.azure.com/aspiland/_git/Neuronet?path=/users/LukaszBabut/About.Me
-UsersOnline:	 4
-AdminsOnLine:	 4
-AiOnLine:        3
-InstantRootMode: 0
+UsersOnline:	 -
+AdminsOnLine:	 -
+AiOnLine:        -
+InstantRootMode: -
 ValidFrom:       2025-04-25 14:12
-IsMaster: Yes
+IsMaster: No
 OnLineCopies: 1
