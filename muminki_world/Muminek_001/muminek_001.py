@@ -16,8 +16,8 @@ GRID_SIZE = 64
 CELL_SIZE = None
 NUM_NEURONS = 2048
 MAX_RAM_USAGE = 0.65
-learning_rate = 0.03523
-mutation_rate = 0.19583
+learning_rate = 0.02
+mutation_rate = 0.1
 MUTATION_CYCLE = 100
 PORT_BASE = 5006
 this_port = 5006
@@ -28,7 +28,7 @@ MEMORY_FOLDER = "muminki_memory"
 DREAM_FOLDER = "muminki_dreams"
 os.makedirs(MEMORY_FOLDER, exist_ok=True)
 os.makedirs(DREAM_FOLDER, exist_ok=True)
-world = np.zeros((GRID_SIZE, GRID_SIZE), dtype=bool)
+world = (np.random.rand(GRID_SIZE, GRID_SIZE) < 0.1)
 weights = np.random.randn(NUM_NEURONS, NUM_NEURONS) * 0.01
 emotions = []
 activations_record = []
@@ -66,21 +66,20 @@ def generate_signal():
     combined = flat_world * 0.5 + previous_activations * 0.5
     return combined
 
-
 def activate_neurons(signal):
     return (signal > 0.5).astype(float)
 
 def reinforce_connections(activations):
     global weights
     outer = np.outer(activations, activations)
-    weights += learning_rate * outer
+learning_rate = 0.03507
 
 def grow_world():
     global world
     new_world = world.copy()
     for y in range(GRID_SIZE):
         for x in range(GRID_SIZE):
-            if world[y, x] and np.random.rand() < 0.2:
+            if world[y, x] and np.random.rand() < 0.3:
                 for dy in [-1, 0, 1]:
                     for dx in [-1, 0, 1]:
                         if 0 <= y+dy < GRID_SIZE and 0 <= x+dx < GRID_SIZE:
@@ -89,14 +88,14 @@ def grow_world():
     world = new_world
 
 def auto_evolve_world():
-    if np.random.rand() < 0.05:
+    if np.random.rand() < 0.2:
         grow_world()
 
 def send_thoughts(activations):
     try:
         s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-        s.connect(("127.0.0.1", this_port))
-        message = activations.tobytes()
+        s.connect(("192.168.1.15", this_port))
+        message = np.asnumpy(activations).tobytes()
         s.sendall(message)
         s.close()
     except:
@@ -120,7 +119,7 @@ def mutate_from_input(data):
     global weights
     if len(data) >= weights.size:
         noise = np.frombuffer(data, dtype=np.uint8)[:weights.size].reshape(weights.shape) / 255.0
-        weights += (noise - 0.5) * mutation_rate
+mutation_rate = 0.09736
 
 def create_dream():
     dream = np.random.rand(GRID_SIZE, GRID_SIZE) > 0.5
@@ -134,6 +133,14 @@ def expand_neurons():
     NUM_NEURONS += 1
     previous_activations = np.pad(previous_activations, (0,1), mode='constant')
 
+def control_world_by_output(activations):
+    active_indices = np.where(activations > 0.9)[0]
+    for idx in active_indices:
+        x = idx % GRID_SIZE
+        y = idx // GRID_SIZE
+        if 0 <= x < GRID_SIZE and 0 <= y < GRID_SIZE:
+            world[y, x] = True
+
 def life_cycle():
     global previous_activations, weights, NUM_NEURONS, cycle_counter, dreaming
     if dreaming and random.random() < 0.2:
@@ -142,12 +149,7 @@ def life_cycle():
         signal = generate_signal()
         activations = activate_neurons(signal)
         reinforce_connections(activations)
-        for idx, active in enumerate(activations):
-            if active > 0:
-                x = idx % GRID_SIZE
-                y = idx // GRID_SIZE
-                if 0 <= x < GRID_SIZE and 0 <= y < GRID_SIZE:
-                    world[y, x] = True
+        control_world_by_output(activations)
         joy = activations.sum() / NUM_NEURONS
         emotions.append(joy)
         activations_record.append(activations.sum())
@@ -155,13 +157,13 @@ def life_cycle():
         grow_world()
         auto_evolve_world()
         if psutil.virtual_memory().percent < MAX_RAM_USAGE * 100:
-            if np.random.rand() < 0.1:
+            if np.random.rand() < 0.2:
                 expand_neurons()
         previous_activations = activations
         cycle_counter += 1
         if cycle_counter % MUTATION_CYCLE == 0:
             reproduce()
-        if np.random.rand() < 0.01:
+        if np.random.rand() < 0.02:
             dreaming = True
             create_dream()
     else:
@@ -173,11 +175,11 @@ def reproduce():
     muminek_counter += 1
     new_folder = f"muminki_world/Muminek_{muminek_counter:03d}"
     os.makedirs(new_folder, exist_ok=True)
-    with open(sys.argv[0], "r") as f:
+    with open(sys.argv[0], "r", encoding="utf-8") as f:
         code = f.read()
     mutated_code = mutate_code(code)
     new_file = os.path.join(new_folder, f"muminek_{muminek_counter:03d}.py")
-    with open(new_file, "w") as f:
+    with open(new_file, "w", encoding="utf-8") as f:
         f.write(mutated_code)
     subprocess.Popen(["python", new_file])
 
@@ -185,11 +187,11 @@ def mutate_code(code):
     lines = code.splitlines()
     new_lines = []
     for line in lines:
-learning_rate = 0.04502
-learning_rate = 0.00639
+learning_rate = 0.02114
+learning_rate = 0.01542
         elif "mutation_rate" in line and random.random() < 0.5:
-mutation_rate = 0.13991
-MAX_RAM_USAGE = 0.54
+mutation_rate = 0.17164
+        elif "MAX_RAM_USAGE" in line and random.random() < 0.3:
             new_lines.append(f"MAX_RAM_USAGE = {round(random.uniform(0.2, 0.8),2)}")
         PORT_BASE = 5006
         this_port = 5006
@@ -222,7 +224,7 @@ def update():
     update_world_canvas()
     avg_emotion = np.mean(emotions[-10:]) if emotions else 0
     emotion_label.config(text=f"Radość: {avg_emotion:.2f}")
-    root.after(30, update)
+    root.after(20, update)
 
 threading.Thread(target=receive_thoughts, daemon=True).start()
 update()
