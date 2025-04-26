@@ -92,7 +92,7 @@ def auto_evolve_world():
 def send_thoughts(activations):
     try:
         s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-        s.connect(("192.168.1.15", this_port))
+        s.connect(("127.0.0.1", this_port))
         message = activations.tobytes()
         s.sendall(message)
         s.close()
@@ -169,11 +169,11 @@ def reproduce():
     muminek_counter += 1
     new_folder = f"muminki_world/Muminek_{muminek_counter:03d}"
     os.makedirs(new_folder, exist_ok=True)
-    with open(sys.argv[0], "r") as f:
+    with open(sys.argv[0], "r", encoding="utf-8") as f:
         code = f.read()
     mutated_code = mutate_code(code)
     new_file = os.path.join(new_folder, f"muminek_{muminek_counter:03d}.py")
-    with open(new_file, "w") as f:
+    with open(new_file, "w", encoding="utf-8") as f:
         f.write(mutated_code)
     subprocess.Popen(["python", new_file])
 
