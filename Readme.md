@@ -10,6 +10,6 @@ UsersOnline:	 -
 AdminsOnLine:	 -
 AiOnLine:        -
 InstantRootMode: -
-ValidFrom:       2025-04-25 14:12
-IsMaster: No
+ValidFrom:       2025-04-25 16:54
+IsMaster: Yes
 OnLineCopies: 1
