@@ -26,7 +26,7 @@ MEMORY_FOLDER = "muminki_memory"
 DREAM_FOLDER = "muminki_dreams"
 os.makedirs(MEMORY_FOLDER, exist_ok=True)
 os.makedirs(DREAM_FOLDER, exist_ok=True)
-world = (np.random.rand(GRID_SIZE, GRID_SIZE) < 0.1).astype(bool)
+world = (np.random.rand(GRID_SIZE, GRID_SIZE) < 0.1)
 weights = np.random.randn(NUM_NEURONS, NUM_NEURONS) * 0.01
 emotions = []
 activations_record = []
@@ -92,8 +92,8 @@ def auto_evolve_world():
 def send_thoughts(activations):
     try:
         s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-        s.connect(("127.0.0.1", this_port))
-        message = activations.tobytes()
+        s.connect(("192.168.1.15", this_port))
+        message = np.asnumpy(activations).tobytes()
         s.sendall(message)
         s.close()
     except:
@@ -123,13 +123,21 @@ def create_dream():
     dream = np.random.rand(GRID_SIZE, GRID_SIZE) > 0.5
     fname = os.path.join(DREAM_FOLDER, f"dream_{int(time.time())}.pkl")
     with open(fname, "wb") as f:
-        pickle.dump(dream, f)
+        pickle.dump(np.asnumpy(dream), f)
 
 def expand_neurons():
     global weights, NUM_NEURONS, previous_activations
     weights = np.pad(weights, ((0,1),(0,1)), mode='constant', constant_values=0.01)
     NUM_NEURONS += 1
     previous_activations = np.pad(previous_activations, (0,1), mode='constant')
+
+def control_world_by_output(activations):
+    active_indices = np.where(activations > 0.9)[0]
+    for idx in active_indices:
+        x = idx % GRID_SIZE
+        y = idx // GRID_SIZE
+        if 0 <= x < GRID_SIZE and 0 <= y < GRID_SIZE:
+            world[y, x] = True
 
 def life_cycle():
     global previous_activations, weights, NUM_NEURONS, cycle_counter, dreaming
@@ -139,15 +147,10 @@ def life_cycle():
         signal = generate_signal()
         activations = activate_neurons(signal)
         reinforce_connections(activations)
-        for idx, active in enumerate(activations):
-            if active > 0:
-                x = idx % GRID_SIZE
-                y = idx // GRID_SIZE
-                if 0 <= x < GRID_SIZE and 0 <= y < GRID_SIZE:
-                    world[y, x] = True
-        joy = activations.sum() / NUM_NEURONS
+        control_world_by_output(activations)
+        joy = np.asnumpy(activations).sum() / NUM_NEURONS
         emotions.append(joy)
-        activations_record.append(activations.sum())
+        activations_record.append(np.asnumpy(activations).sum())
         threading.Thread(target=send_thoughts, args=(activations,), daemon=True).start()
         grow_world()
         auto_evolve_world()
