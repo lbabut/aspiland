@@ -14,15 +14,15 @@ import sys
 GRID_SIZE = 32
 CELL_SIZE = None
 NUM_NEURONS = 32
-MAX_RAM_USAGE = 0.65
-learning_rate = 0.04826
-mutation_rate = 0.1
+MAX_RAM_USAGE = 0.33
+learning_rate = 0.04747
+mutation_rate = 0.03178
 MUTATION_CYCLE = 100
-PORT_BASE = 5006
-this_port = 5006
+PORT_BASE = 5009
+this_port = 5009
 muminek_counter = 0
-PORT_BASE = 5006
-this_port = 5006
+PORT_BASE = 5009
+this_port = 5009
 MEMORY_FOLDER = "muminki_memory"
 DREAM_FOLDER = "muminki_dreams"
 os.makedirs(MEMORY_FOLDER, exist_ok=True)
@@ -146,25 +146,25 @@ def mutate_code(code):
     for line in lines:
         if "learning_rate" in line and random.random() < 0.5:
             new_lines.append(f"learning_rate = {round(random.uniform(0.001, 0.05),5)}")
-        elif "mutation_rate" in line and random.random() < 0.5:
-mutation_rate = 0.12773
+mutation_rate = 0.18455
+            new_lines.append(f"mutation_rate = {round(random.uniform(0.01, 0.2),5)}")
         elif "MAX_RAM_USAGE" in line and random.random() < 0.3:
-MAX_RAM_USAGE = 0.49
-        PORT_BASE = 5006
-        this_port = 5006
-            PORT_BASE = 5006
-            this_port = 5006
+            new_lines.append(f"MAX_RAM_USAGE = {round(random.uniform(0.2, 0.8),2)}")
+        PORT_BASE = 5009
+        this_port = 5009
+            PORT_BASE = 5009
+            this_port = 5009
             indent = " " * (len(line) - len(line.lstrip()))
-            PORT_BASE = 5006
-            this_port = 5006
+            PORT_BASE = 5009
+            this_port = 5009
             new_lines.append(f"{indent}this_port = {new_port}")
         else:
             new_lines.append(line)
     return "\n".join(new_lines) if new_lines else ""
 
 def reproduce():
-    PORT_BASE = 5006
-    this_port = 5006
+    PORT_BASE = 5009
+    this_port = 5009
     muminek_counter += 1
     new_folder = f"muminki_world/Muminek_{muminek_counter:03d}"
     os.makedirs(new_folder, exist_ok=True)

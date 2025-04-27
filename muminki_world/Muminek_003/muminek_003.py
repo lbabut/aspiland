@@ -15,14 +15,14 @@ GRID_SIZE = 32
 CELL_SIZE = None
 NUM_NEURONS = 32
 MAX_RAM_USAGE = 0.65
-learning_rate = 0.04826
-mutation_rate = 0.1
+learning_rate = 0.02128
+mutation_rate = 0.03322
 MUTATION_CYCLE = 100
-PORT_BASE = 5006
-this_port = 5006
+PORT_BASE = 5008
+this_port = 5008
 muminek_counter = 0
-PORT_BASE = 5006
-this_port = 5006
+PORT_BASE = 5008
+this_port = 5008
 MEMORY_FOLDER = "muminki_memory"
 DREAM_FOLDER = "muminki_dreams"
 os.makedirs(MEMORY_FOLDER, exist_ok=True)
@@ -71,7 +71,7 @@ def activate_neurons(signal):
 def reinforce_connections(activations):
     global weights
     outer = np.outer(activations, activations)
-    weights += learning_rate * outer
+learning_rate = 0.03192
 
 def grow_world():
     global world
@@ -145,26 +145,26 @@ def mutate_code(code):
     new_lines = []
     for line in lines:
         if "learning_rate" in line and random.random() < 0.5:
-            new_lines.append(f"learning_rate = {round(random.uniform(0.001, 0.05),5)}")
-        elif "mutation_rate" in line and random.random() < 0.5:
-mutation_rate = 0.12773
+learning_rate = 0.01708
+mutation_rate = 0.05331
+mutation_rate = 0.14297
         elif "MAX_RAM_USAGE" in line and random.random() < 0.3:
-MAX_RAM_USAGE = 0.49
-        PORT_BASE = 5006
-        this_port = 5006
-            PORT_BASE = 5006
-            this_port = 5006
+MAX_RAM_USAGE = 0.73
+        PORT_BASE = 5008
+        this_port = 5008
+            PORT_BASE = 5008
+            this_port = 5008
             indent = " " * (len(line) - len(line.lstrip()))
-            PORT_BASE = 5006
-            this_port = 5006
+            PORT_BASE = 5008
+            this_port = 5008
             new_lines.append(f"{indent}this_port = {new_port}")
         else:
             new_lines.append(line)
     return "\n".join(new_lines) if new_lines else ""
 
 def reproduce():
-    PORT_BASE = 5006
-    this_port = 5006
+    PORT_BASE = 5008
+    this_port = 5008
     muminek_counter += 1
     new_folder = f"muminki_world/Muminek_{muminek_counter:03d}"
     os.makedirs(new_folder, exist_ok=True)

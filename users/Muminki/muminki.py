@@ -1,5 +1,4 @@
-﻿
-import numpy as np
+﻿import numpy as np
 import tkinter as tk
 import psutil
 import socket
@@ -12,9 +11,9 @@ import shutil
 import subprocess
 import sys
 
-GRID_SIZE = 64
+GRID_SIZE = 32
 CELL_SIZE = None
-NUM_NEURONS = 2048
+NUM_NEURONS = 32
 MAX_RAM_USAGE = 0.65
 learning_rate = 0.02
 mutation_rate = 0.1
@@ -93,7 +92,7 @@ def send_thoughts(activations):
     try:
         s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
         s.connect(("192.168.1.15", this_port))
-        message = np.asnumpy(activations).tobytes()
+        message = activations.tobytes()
         s.sendall(message)
         s.close()
     except:
@@ -123,7 +122,7 @@ def create_dream():
     dream = np.random.rand(GRID_SIZE, GRID_SIZE) > 0.5
     fname = os.path.join(DREAM_FOLDER, f"dream_{int(time.time())}.pkl")
     with open(fname, "wb") as f:
-        pickle.dump(np.asnumpy(dream), f)
+        pickle.dump(dream, f)
 
 def expand_neurons():
     global weights, NUM_NEURONS, previous_activations
@@ -138,47 +137,6 @@ def control_world_by_output(activations):
         y = idx // GRID_SIZE
         if 0 <= x < GRID_SIZE and 0 <= y < GRID_SIZE:
             world[y, x] = True
-
-def life_cycle():
-    global previous_activations, weights, NUM_NEURONS, cycle_counter, dreaming
-    if dreaming and random.random() < 0.2:
-        dreaming = False
-    if not dreaming:
-        signal = generate_signal()
-        activations = activate_neurons(signal)
-        reinforce_connections(activations)
-        control_world_by_output(activations)
-        joy = np.asnumpy(activations).sum() / NUM_NEURONS
-        emotions.append(joy)
-        activations_record.append(np.asnumpy(activations).sum())
-        threading.Thread(target=send_thoughts, args=(activations,), daemon=True).start()
-        grow_world()
-        auto_evolve_world()
-        if psutil.virtual_memory().percent < MAX_RAM_USAGE * 100:
-            if np.random.rand() < 0.2:
-                expand_neurons()
-        previous_activations = activations
-        cycle_counter += 1
-        if cycle_counter % MUTATION_CYCLE == 0:
-            reproduce()
-        if np.random.rand() < 0.02:
-            dreaming = True
-            create_dream()
-    else:
-        create_dream()
-
-def reproduce():
-    global muminek_counter, PORT_BASE
-    muminek_counter += 1
-    new_folder = f"muminki_world/Muminek_{muminek_counter:03d}"
-    os.makedirs(new_folder, exist_ok=True)
-    with open(sys.argv[0], "r", encoding="utf-8") as f:
-        code = f.read()
-    mutated_code = mutate_code(code)
-    new_file = os.path.join(new_folder, f"muminek_{muminek_counter:03d}.py")
-    with open(new_file, "w", encoding="utf-8") as f:
-        f.write(mutated_code)
-    subprocess.Popen(["python", new_file])
 
 def mutate_code(code):
     lines = code.splitlines()
@@ -197,7 +155,48 @@ def mutate_code(code):
             new_lines.append(f"{indent}this_port = {new_port}")
         else:
             new_lines.append(line)
-    return "\n".join(new_lines)
+    return "\n".join(new_lines) if new_lines else ""
+
+def reproduce():
+    global muminek_counter, PORT_BASE
+    muminek_counter += 1
+    new_folder = f"muminki_world/Muminek_{muminek_counter:03d}"
+    os.makedirs(new_folder, exist_ok=True)
+    with open(sys.argv[0], "r", encoding="utf-8", errors="ignore") as f:
+        code = f.read()
+    mutated_code = mutate_code(code)
+    new_file = os.path.join(new_folder, f"muminek_{muminek_counter:03d}.py")
+    with open(new_file, "w", encoding="utf-8") as f:
+        f.write(mutated_code)
+    subprocess.Popen(["python", new_file])
+
+def life_cycle():
+    global previous_activations, weights, NUM_NEURONS, cycle_counter, dreaming
+    if dreaming and random.random() < 0.2:
+        dreaming = False
+    if not dreaming:
+        signal = generate_signal()
+        activations = activate_neurons(signal)
+        reinforce_connections(activations)
+        control_world_by_output(activations)
+        joy = activations.sum() / NUM_NEURONS
+        emotions.append(joy)
+        activations_record.append(activations.sum())
+        threading.Thread(target=send_thoughts, args=(activations,), daemon=True).start()
+        grow_world()
+        auto_evolve_world()
+        if psutil.virtual_memory().percent < MAX_RAM_USAGE * 100:
+            if np.random.rand() < 0.2:
+                expand_neurons()
+        previous_activations = activations
+        cycle_counter += 1
+        if cycle_counter % MUTATION_CYCLE == 0:
+            reproduce()
+        if np.random.rand() < 0.02:
+            dreaming = True
+            create_dream()
+    else:
+        create_dream()
 
 root = tk.Tk()
 root.title("Muminki - Świat")
