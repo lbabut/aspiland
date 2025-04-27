@@ -142,20 +142,22 @@ def mutate_code(code):
     lines = code.splitlines()
     new_lines = []
     for line in lines:
-        if "learning_rate" in line and random.random() < 0.5:
-            new_lines.append(f"learning_rate = {round(random.uniform(0.001, 0.05),5)}")
-        elif "mutation_rate" in line and random.random() < 0.5:
-            new_lines.append(f"mutation_rate = {round(random.uniform(0.01, 0.2),5)}")
-        elif "MAX_RAM_USAGE" in line and random.random() < 0.3:
-            new_lines.append(f"MAX_RAM_USAGE = {round(random.uniform(0.2, 0.8),2)}")
-        elif "PORT_BASE" in line:
+        stripped_line = line.lstrip()
+        indent = line[:len(line) - len(stripped_line)]
+        if "learning_rate" in stripped_line and random.random() < 0.5:
+            new_lines.append(f"{indent}learning_rate = {round(random.uniform(0.001, 0.05),5)}")
+        elif "mutation_rate" in stripped_line and random.random() < 0.5:
+            new_lines.append(f"{indent}mutation_rate = {round(random.uniform(0.01, 0.2),5)}")
+        elif "MAX_RAM_USAGE" in stripped_line and random.random() < 0.3:
+            new_lines.append(f"{indent}MAX_RAM_USAGE = {round(random.uniform(0.2, 0.8),2)}")
+        elif "PORT_BASE" in stripped_line:
             new_port = PORT_BASE + muminek_counter
-            indent = " " * (len(line) - len(line.lstrip()))
             new_lines.append(f"{indent}PORT_BASE = {new_port}")
             new_lines.append(f"{indent}this_port = {new_port}")
         else:
             new_lines.append(line)
-    return "\n".join(new_lines) if new_lines else ""
+    return "\n".join(new_lines)
+
 
 def reproduce():
     global muminek_counter, PORT_BASE
