@@ -1,12 +1,15 @@
 # RFC 0002 — Repository hygiene baseline
 
-Status: Proposed
+Status: Accepted  
+Accepted: 2026-07-11  
+Decision record: PR #2  
+Effective: 2026-07-11
 
 ## Purpose
 
 Establish a safe baseline for maintaining a repository that contains governance, historical records, personal areas and experimental software.
 
-## Proposed baseline
+## Accepted baseline
 
 1. The root README describes the current repository rather than a historical server status.
 2. Legacy root text is preserved in `archive/` before replacement.
@@ -17,7 +20,7 @@ Establish a safe baseline for maintaining a repository that contains governance,
 7. User directories are reviewed for personal or sensitive data before reclassification.
 8. History is not rewritten unless a confirmed secret or serious privacy exposure requires it.
 
-## Changes included with this proposal
+## Changes included
 
 - replace `Readme.md` with `README.md`;
 - preserve the old root README in the archive;
@@ -35,6 +38,6 @@ Tracked `.vs/`, PyInstaller `build/` and `dist/` output should be removed in a s
 
 Revert the cleanup merge commit. The legacy README remains preserved in `archive/legacy-root-readme-2025.md`.
 
-## Decision record
+## Decision
 
-Pending review.
+Accepted by the repository owner through PR #2.
