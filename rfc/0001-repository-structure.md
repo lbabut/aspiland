@@ -1,15 +1,18 @@
 # RFC 0001 — Preserve the dream, separate the law from the scratchpad
 
-Status: Draft
+Status: Accepted  
+Accepted: 2026-07-11  
+Decision record: PR #1  
+Effective: 2026-07-11
 
 ## Purpose
 
 Aspiland already contains law, identity, experiments, public communication and software. This RFC introduces a structure that preserves the entire history while making it clear which documents are binding, proposed, experimental, archival or safe for public distribution.
 
-## Proposed top-level structure
+## Accepted top-level structure
 
 - `/canon` — currently binding constitutional and governance documents.
-- `/rfc` — proposed changes, discussions and decision records.
+- `/rfc` — proposed changes and decision records.
 - `/projects` — experiments, software and research projects.
 - `/archive` — preserved legacy material and superseded documents.
 - `/protocols` — procedures for consent, voting, amendment, rollback, backups and verification.
@@ -26,8 +29,8 @@ Aspiland already contains law, identity, experiments, public communication and s
 
 ## First project under the new structure
 
-`UNIVERSE / MERCY` becomes the first project organized under `/projects`. It explores safe governance for hypothetical technologies capable of highly consequential interventions in complex systems.
+`UNIVERSE / MERCY` is the first project organized under `/projects`. It explores safe governance for hypothetical technologies capable of highly consequential interventions in complex systems.
 
-## Decision sought
+## Decision
 
-Accept this directory structure as the foundation for a gradual, non-destructive reorganization of Aspiland.
+Accepted through merged PR #1. This decision accepts the directory model and migration principles; it does not automatically declare any legacy document canonical.

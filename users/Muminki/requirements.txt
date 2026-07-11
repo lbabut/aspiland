@@ -1,0 +1,4 @@
+beautifulsoup4>=4.12,<5
+numpy>=1.26,<3
+psutil>=5.9,<8
+requests>=2.31,<3
