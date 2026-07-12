@@ -40,14 +40,14 @@ The following items are go-live blockers unless a written risk acceptance explai
 - [x] Repository map distinguishes current and legacy areas.
 - [x] Glossary distinguishes current terms from historical metaphors.
 - [x] Contribution guidance separates canon, RFCs, projects, archive and public material.
-- [ ] Add a code of conduct appropriate for a small experimental community.
+- [x] Add a code of conduct appropriate for a small experimental community.
 - [ ] Ensure every active project has an owner, status, dependencies and safe run instructions.
 
 ### GitHub controls
 
 - [ ] Protect `main` from accidental force-push and deletion.
 - [ ] Require review or an explicit exception record for consequential changes.
-- [ ] Add issue and pull-request templates that prompt for scope, risk, data handling and rollback.
+- [x] Add issue and pull-request templates that prompt for scope, risk, data handling and rollback.
 - [ ] Enable secret scanning and dependency alerts where available.
 - [ ] Add automated checks for broken links, Markdown structure and accidental generated files.
 - [ ] Define who can merge, publish releases and change repository settings.
@@ -56,7 +56,7 @@ The following items are go-live blockers unless a written risk acceptance explai
 
 - [ ] Choose a release name and tag the reviewed launch commit.
 - [ ] Publish a concise launch note explaining what Aspiland is and is not.
-- [ ] Link prominently to the glossary, security policy, contribution guide and current status.
+- [x] Link prominently to the glossary, security policy, contribution guide and current status.
 - [ ] State which components are active, historical, fictional, unsupported or unsafe to run.
 - [ ] Test the onboarding path using a new account or a reader unfamiliar with the repository.
 
