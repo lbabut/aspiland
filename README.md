@@ -13,6 +13,9 @@ This repository is an experiment, not a sovereign state, production service or c
 - [`archive/`](archive/) — preserved legacy and superseded material.
 - [`public/`](public/) — material intentionally prepared for unrestricted publication.
 - [`docs/repository-map.md`](docs/repository-map.md) — map of legacy and current areas.
+- [`docs/glossary.md`](docs/glossary.md) — current terminology and interpretation of historical terms.
+- [`docs/go-live-checklist.md`](docs/go-live-checklist.md) — readiness gates for repository and community launch.
+- [`SECURITY.md`](SECURITY.md) — private reporting, exposed-secret response and security scope.
 
 ## Legacy areas
 
