@@ -15,4 +15,5 @@ Merging an RFC records repository history, but the document should explicitly st
 ## Index
 
 - [RFC 0001 — Repository structure](0001-repository-structure.md) — Accepted
-- [RFC 0002 — Repository hygiene baseline](0002-repository-hygiene.md) — Proposed
+- [RFC 0002 — Repository hygiene baseline](0002-repository-hygiene.md) — Accepted
+- [RFC 0003 — Remove obsolete coercive and persistence rules](0003-remove-obsolete-coercive-rules.md) — Accepted

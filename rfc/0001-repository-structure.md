@@ -24,7 +24,7 @@ Aspiland already contains law, identity, experiments, public communication and s
 2. Existing documents remain historical evidence even when replaced.
 3. A document becomes canonical only through an explicit review and acceptance process.
 4. Satire, fiction, experiments and binding rules must be clearly distinguishable.
-5. Personal data must not be made eternal merely because it was committed.
+5. Personal data must not be retained indefinitely merely because it was committed.
 6. Every future structural migration must be reversible.
 
 ## First project under the new structure

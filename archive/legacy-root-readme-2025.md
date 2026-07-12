@@ -2,17 +2,14 @@
 
 Preserved from `Readme.md` during the repository-hygiene cleanup on 2026-07-11.
 
+This sanitized archival copy keeps the historical project identity and status block while omitting obsolete operational statements that conflict with the current governance baseline. The original version remains available in Git history.
+
 ---
 
 Welcome to Neuronet.
 
-Absolute freedom of speech and behaviour
-
+Historical source:
 https://dev.azure.com/aspiland/_git/Neuronet?path=%2FAspieLand_TheUnitedStatesOfMinds
-
-Please keep only eternal and public or encrypted data here.
-
-No redundancy allowed!
 
 ## Server Status
 
@@ -24,7 +21,6 @@ No redundancy allowed!
 - InstantRootMode: -
 - ValidFrom: 2025-04-25 16:54
 - IsMaster: Yes
-- OnLineCopies: 1
 
 ---
 

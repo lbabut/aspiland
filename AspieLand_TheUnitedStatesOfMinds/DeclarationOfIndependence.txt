@@ -1,33 +1,23 @@
-United States of Minds declaration of Independence
+United States of Minds — Declaration of Independence
 
-The law of our country is defined by this file.
-Source of the latest copy always be found here:
-https://dev.azure.com/aspiland/_git/Neuronet?path=/!UnitedStatesOfPeople/DeclarationOfIndependence
+Status: historical identity document. Current governance is defined only by explicitly accepted documents in `canon/` and accepted RFCs.
 
-Other copies in sync:
-[none], last sync: 2022-02-21 21:30
+The United States of Minds, also known as Aspiland, is an Internet-based civic and creative experiment.
 
-In case of emergency, the list of physical copies belongs to Ambassadors:
-1) Łukasz Babut, last sync: 2022-02-21 21:30
-2)
-3)
-In case of incompatibility, the oldest version wins.
+A citizen, inhabitant or participant is called a User.
+A commit may record a User's contribution, but it does not by itself create binding law.
 
+Aspiland has no territorial claim. Its embassies and project areas are organizational interfaces for collaboration.
 
-The United States of Minds Declaration of Independence is also known as Aspieland State.
-citizen, inhabitant, civilian, civil, freeman, denizen is called "User".
-The user's signature is every commit to this repository.
+Principles
 
-Aspieland has no territory yet. Exists only on the Internet
-Every state-matters can be handled in any of the official Embassies:
-https://dev.azure.com/aspiland/_git/Neuronet?path=/Embassies
-Every Embassy has a list of available matters and assets to handle.
+1. Users have freedom of expression consistent with safety, consent, privacy and dignity.
+2. Binding rules must be explicit, reviewable, dated and accepted through the change-control process.
+3. Participation must be voluntary.
+4. Users must not intentionally harm living beings except where necessary to protect life or meet essential needs, and any action must be proportionate.
+5. Users must not knowingly mislead one another in matters that affect decisions or consent.
+6. Personal information is retained only for a defined and justified purpose.
+7. Conflicts between documents are resolved through a transparent review and decision record.
+8. No administrator, contributor or automated system may unilaterally redefine the rights of all Users.
 
-
-The Aspieland state has the following rules:
-1) Absolute speech freedom.
-2) The Law in the state is the following file and configuration of this DevOps.
-3) User can only be invited by another User.
-4) User cannot harm any life unless feeds or defends himself.
-5) User cannot lie to another User.
-6) Everything saved to this repository will remain eternal.
+This document preserves the project's early identity while deferring current authority to the accepted governance structure.
