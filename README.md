@@ -16,6 +16,7 @@ This repository is an experiment, not a sovereign state, production service or c
 - [`docs/glossary.md`](docs/glossary.md) — current terminology and interpretation of historical terms.
 - [`docs/go-live-checklist.md`](docs/go-live-checklist.md) — readiness gates for repository and community launch.
 - [`SECURITY.md`](SECURITY.md) — private reporting, exposed-secret response and security scope.
+- [`CODE_OF_CONDUCT.md`](CODE_OF_CONDUCT.md) — participation expectations and fair-response principles.
 
 ## Legacy areas
 
