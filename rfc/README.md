@@ -18,6 +18,6 @@ Merging an RFC records repository history, but the document should explicitly st
 - [RFC 0002 — Repository hygiene baseline](0002-repository-hygiene.md) — Accepted
 - [RFC 0003 — Remove obsolete coercive and persistence rules](0003-remove-obsolete-coercive-rules.md) — Accepted
 - [RFC 0004 — Recover the governance automation backlog](0004-governance-automation-backlog.md) — Proposed
-- [RFC 0005 — Bounded System Guardian role](0005-bounded-system-guardian-role.md) — Proposed
+- [RFC 0005 — Bounded System Guardian role](0005-bounded-system-guardian-role.md) — Accepted
 - [RFC 0006 — Data lifecycle and privacy baseline](0006-data-lifecycle-protocol.md) — Proposed
 - [RFC 0007 — Licensing strategy for mixed historical material](0007-licensing-strategy.md) — Proposed
