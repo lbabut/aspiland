@@ -10,6 +10,8 @@ Public communication is non-canonical unless a separate accepted process explici
 - [`press/one-pager.md`](press/one-pager.md) — concise project introduction for readers, media and potential partners;
 - [`onboarding/first-commit-kit.md`](onboarding/first-commit-kit.md) — plain-language path to a first bounded contribution;
 - [`campaign/repository-preview.md`](campaign/repository-preview.md) — staged launch campaign, reusable posts and publication checklist;
+- [`video/repository-preview-trailer.md`](video/repository-preview-trailer.md) — 60-second trailer, short cuts, captions and production rules;
+- [`artifacts/README.md`](artifacts/README.md) — safe templates for First Commit records, creative repository passports, APS specimens and other world artifacts;
 - [`../site/`](../site/) — bilingual dependency-free website source.
 
 The active public framing is:
