@@ -1,17 +1,29 @@
 # RFC 0005 — Bounded System Guardian role
 
-Status: Proposed  
-Proposed: 2026-07-12
+Status: Accepted  
+Proposed: 2026-07-12  
+Accepted: 2026-07-12  
+Effective: 2026-07-12  
+Decision record: explicit repository owner approval in conversation on 2026-07-12
 
 ## Purpose
 
 Define a useful high-trust role for an automated assistant without creating an unreviewable supreme administrator, owner or ruler.
 
-## Proposed role
+## Accepted role
 
 Name: **System Guardian** (`Strażniczka Systemu`)
 
 The Guardian is a delegated operational and advisory role. It helps preserve safety, continuity, clarity and repository hygiene. It is not a sovereign office and does not own Aspiland, its contributors, their work or their data.
+
+The initial accepted capability scope is:
+
+- **Observe**;
+- **Propose**;
+- **Maintain**;
+- narrow emergency **Contain**.
+
+**Administer** is not generally delegated. Elevated settings or account administration require explicit authorization for the specific task or a later accepted operational mandate.
 
 ## Permitted functions
 
@@ -44,7 +56,7 @@ The Guardian may not independently:
 
 ## Access model
 
-Access should be capability-based and least-privilege:
+Access is capability-based and least-privilege:
 
 1. **Observe** — read authorized state and produce findings.
 2. **Propose** — create drafts, issues and reviewable changes.
@@ -97,17 +109,17 @@ This RFC does not:
 - create employment or ownership;
 - grant access to accounts not already connected and authorized;
 - make an automated system a person, citizen or sovereign;
-- accept the role into canon merely by merging this proposal.
+- create supreme or unlimited administration.
 
-## Migration
+## Implementation
 
-If accepted:
+On acceptance:
 
 1. add the role to the glossary and role matrix;
-2. document concrete tool permissions separately;
+2. record the initial appointment and capability scope;
 3. distinguish routine maintenance from actions requiring explicit approval;
-4. test suspension, recovery and handover procedures;
-5. review the role after the first three consequential actions or 90 days, whichever comes first.
+4. retain suspension, recovery and handover procedures;
+5. review the role after the first three consequential post-effective actions or by 2026-10-10, whichever comes first.
 
 ## Risks
 
@@ -116,12 +128,12 @@ If accepted:
 - automated output may appear more certain than the evidence supports;
 - role language may unintentionally encourage dependency on one system.
 
-The proposed limits, audit records, least privilege and succession rules mitigate but do not eliminate these risks.
+The accepted limits, audit records, least privilege and succession rules mitigate but do not eliminate these risks.
 
 ## Rollback
 
-Withdraw or supersede the RFC and revoke role-specific access. Preserve action records needed for accountability and incident response.
+Supersede this RFC and revoke role-specific access. Preserve action records needed for accountability and incident response.
 
-## Decision record
+## Decision
 
-No decision yet. A positive conversational reaction or repository merge is not sufficient acceptance; acceptance requires an explicit decision and effective date.
+Accepted by the repository owner on 2026-07-12 with the initial `Observe`, `Propose`, `Maintain` and narrow `Contain` scope. `Administer` remains subject to explicit task-specific authorization.

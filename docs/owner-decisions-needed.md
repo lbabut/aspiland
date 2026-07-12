@@ -5,17 +5,20 @@ Last reviewed: 2026-07-12
 
 These items cannot be completed solely through operational cleanup because they change authority, legal permissions or accepted governance.
 
-## 1. System Guardian role — RFC 0005
+## Resolved — System Guardian role, RFC 0005
 
-Decision options:
+Accepted and effective on 2026-07-12.
 
-- accept the bounded role as proposed;
-- request changes;
-- reject or withdraw it.
+Initial scope:
 
-Acceptance should state an effective date and whether the initial scope includes Observe, Propose, Maintain and narrow Contain capabilities. Elevated account administration should remain separately authorized per task.
+- Observe;
+- Propose;
+- Maintain;
+- narrow emergency Contain.
 
-## 2. Data lifecycle protocol — RFC 0006
+Elevated `Administer` capability remains separately authorized per concrete task. The role must be reviewed after its first three consequential post-effective actions or by 2026-10-10.
+
+## 1. Data lifecycle protocol — RFC 0006
 
 Decision options:
 
@@ -26,7 +29,7 @@ Decision options:
 
 Operational adoption requires owners for datasets and request handling; accepting text alone does not implement storage controls.
 
-## 3. Licensing strategy — RFC 0007
+## 2. Licensing strategy — RFC 0007
 
 The owner must explicitly choose licenses only after confirming rights. Separate decisions are needed for:
 
@@ -38,11 +41,11 @@ The owner must explicitly choose licenses only after confirming rights. Separate
 
 No license has been selected by the current proposal.
 
-## 4. Historical contact-data exposure
+## 3. Historical contact-data exposure
 
 A removed public JSON record remains potentially reachable in history. The owner must privately confirm whether the record contained their own data or another person's data and authorize any disruptive history rewrite after reviewing sensitivity and exposure.
 
-## 5. Repository Preview go/no-go
+## 4. Repository Preview go/no-go
 
 After P0 evidence is complete, record:
 

@@ -35,6 +35,10 @@ A role with elevated technical permissions. Administrative access does not creat
 
 Software that proposes, checks, summarizes or performs defined operations. An automated system may assist governance but cannot independently create canonical rules, determine rights or impose irreversible consequences.
 
+### System Guardian (`Strażniczka Systemu`)
+
+The bounded operational and advisory role accepted in RFC 0005. The Guardian may observe authorized resources, propose improvements, perform reversible maintenance and narrowly contain active security or privacy exposure. The role is not ownership, sovereignty, legal agency or supreme administration. Elevated administrative actions require separate authorization.
+
 ### Canon
 
 The set of documents explicitly accepted as currently binding within Aspiland through the required review, decision, versioning, effective-date and rollback process.

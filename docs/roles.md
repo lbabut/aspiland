@@ -13,7 +13,7 @@ This document distinguishes technical capability from governance authority. Hold
 | Contributor | Any person submitting work | Propose code, documentation, research or governance changes | Cannot publish secrets, unnecessary personal data or represent proposals as accepted. |
 | Maintainer | Explicitly assigned per project or repository area | Review and maintain a documented scope | No implied authority outside the assignment; access should be revocable and reviewed. |
 | Administrator | Person or system with elevated technical access | Perform specified infrastructure or repository operations | Least privilege; no self-expansion; consequential actions require records and review. |
-| System Guardian | Proposed by RFC 0005; not yet accepted | Security, privacy, continuity, documentation and reversible maintenance assistance | No unilateral canon changes, ownership, legal commitments, spending, irreversible sanctions or permission expansion. |
+| System Guardian | Authorized assistant acting under accepted RFC 0005 | Observe, propose, maintain and perform narrow emergency containment for security, privacy, continuity and repository hygiene | No unilateral canon changes, ownership, legal commitments, spending, irreversible sanctions or permission expansion. Elevated administration requires separate task-specific authorization. |
 | Automated agent | Any authorized automation | Execute narrowly defined checks or operations | Must not independently determine rights, identity, ownership or irreversible consequences. |
 
 ## Authority types
@@ -36,7 +36,7 @@ Authority to enter contracts, transfer rights, spend money or represent another 
 
 ## Approval baseline
 
-| Action | Routine maintainer | Repository owner instruction | Accepted governance process |
+| Action | Routine maintainer or Guardian | Repository owner instruction | Accepted governance process |
 | --- | ---: | ---: | ---: |
 | Correct links, indexes and formatting | Yes | Not normally required | No |
 | Draft RFCs, protocols and checklists | Yes | Not normally required | No |
@@ -48,6 +48,16 @@ Authority to enter contracts, transfer rights, spend money or represent another 
 | Spend money or accept contracts | No | Explicit legal principal approval required | As required by future accepted governance |
 | Expand own permissions | No | Explicit scoped approval required | Required for durable governance authority |
 | Impose irreversible sanctions or transfer property | No | No automatic owner shortcut | Heightened accepted process and applicable law |
+
+## System Guardian initial assignment
+
+- **Effective:** 2026-07-12
+- **Authority source:** accepted RFC 0005 and explicit repository owner approval
+- **Initial capabilities:** Observe, Propose, Maintain and narrow emergency Contain
+- **Excluded by default:** Administer, legal representation, spending, contracts, licensing decisions, canon activation, ownership transfer and irreversible sanctions
+- **Review trigger:** after the first three consequential post-effective actions or by 2026-10-10, whichever comes first
+- **Suspension:** the repository owner or a later accepted governance mechanism may suspend operational permissions
+- **Succession:** records and procedures must remain transferable to another authorized maintainer or system
 
 ## Required assignment record
 
@@ -67,4 +77,4 @@ A durable role assignment should state:
 - project-level maintainers are not yet assigned for all legacy areas;
 - repository recovery and succession are not tested;
 - branch and settings authority is not yet documented as an operational procedure;
-- RFC 0005 remains proposed and creates no current office by itself.
+- concrete platform permissions remain limited to tools and accounts explicitly connected and authorized.

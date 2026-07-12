@@ -13,7 +13,7 @@ Status: working index; non-canonical
 | Personal-data containment | `docs/decisions/2026-07-12-public-contact-data-containment.md` | Current-tree action complete; history decision open |
 | Data lifecycle | RFC 0006 and `protocols/data-lifecycle.md` | Proposed, not operational |
 | Licensing | RFC 0007 and `docs/licensing.md` | Decision open |
-| Roles | `docs/roles.md` and RFC 0005 | Baseline documented; Guardian proposed |
+| Roles | RFC 0005, `docs/roles.md` and the appointment record | Bounded System Guardian role active; scheduled review required |
 | Project status | `docs/project-inventory.md` | Current projects documented; legacy review open |
 | Recovery | `docs/recovery-checklist.md` | Procedure drafted; restore test open |
 | Release decision | `docs/release-readiness.md` and go-live template | Not ready |
