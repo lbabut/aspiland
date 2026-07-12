@@ -17,3 +17,4 @@ Legacy experiments may remain elsewhere until they have been inventoried and mig
 ## Current projects
 
 - [`UNIVERSE / MERCY`](universe-mercy/) — ethical governance framework for hypothetical high-impact technologies.
+- [`Sandbox Detection`](sandbox-detection/) — falsifiable tests for specific computational models of physical reality, beginning with `SANDBOX-01 / Cubic Fingerprint`.
