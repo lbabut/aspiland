@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Aspiland is an open repository for governance, software, research and creative experiments — a public prototype of a digital civilization.">
+  <meta name="theme-color" content="#080b12">
+  <title>Aspiland — Repository Preview</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" aria-label="Primary navigation">
+    <a class="wordmark" href="#top" aria-label="Aspiland home">
+      <span class="wordmark-mark" aria-hidden="true"><span></span></span>
+      <span>ASPILAND</span>
+    </a>
+    <nav class="nav-links" aria-label="Sections">
+      <a href="#idea" data-i18n="nav.idea">The idea</a>
+      <a href="#map" data-i18n="nav.map">Repository map</a>
+      <a href="#participate" data-i18n="nav.participate">Participate</a>
+      <a href="#status" data-i18n="nav.status">Status</a>
+    </nav>
+    <button class="language-toggle" type="button" aria-label="Switch language" data-language-toggle>PL</button>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top">
+      <div class="hero-grid" aria-hidden="true"></div>
+      <div class="hero-copy">
+        <p class="eyebrow" data-i18n="hero.eyebrow">Repository Preview / Open experiment</p>
+        <h1 data-i18n="hero.title">A world you do not join through a form. You enter through a commit.</h1>
+        <p class="hero-lead" data-i18n="hero.lead">Aspiland is a public laboratory for digital governance, artificial life, software and creative experiments. Its history is inspectable. Its proposals can be challenged. Its future can be improved.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="https://github.com/lbabut/aspiland" data-i18n="hero.primary">Enter the repository</a>
+          <a class="button button-secondary" href="#participate" data-i18n="hero.secondary">Make a first contribution</a>
+        </div>
+      </div>
+      <div class="hero-orbit" aria-hidden="true">
+        <div class="orbit orbit-one"></div>
+        <div class="orbit orbit-two"></div>
+        <div class="orbit orbit-three"></div>
+        <div class="orbit-core">A</div>
+        <span class="orbit-label orbit-label-one">CANON</span>
+        <span class="orbit-label orbit-label-two">RFC</span>
+        <span class="orbit-label orbit-label-three">PROJECTS</span>
+      </div>
+      <div class="hero-note" role="note">
+        <strong data-i18n="hero.noteTitle">Important:</strong>
+        <span data-i18n="hero.note">Aspiland is an experiment, not a sovereign state, legal jurisdiction or production public service.</span>
+      </div>
+    </section>
+
+    <section class="section" id="idea">
+      <div class="section-heading">
+        <p class="eyebrow" data-i18n="idea.eyebrow">The premise</p>
+        <h2 data-i18n="idea.title">What if a civilization had version history?</h2>
+      </div>
+      <div class="idea-layout">
+        <p class="section-intro" data-i18n="idea.intro">Aspiland treats governance, culture and technology as things that should be understandable, reviewable and reversible. The repository preserves the strange, ambitious history of the project while separating current rules from proposals, experiments and archives.</p>
+        <div class="principles">
+          <article class="principle-card">
+            <span class="card-index">01</span>
+            <h3 data-i18n="idea.card1Title">History without confusion</h3>
+            <p data-i18n="idea.card1Text">Old ideas remain visible, but age does not make them binding or correct.</p>
+          </article>
+          <article class="principle-card">
+            <span class="card-index">02</span>
+            <h3 data-i18n="idea.card2Title">Change with evidence</h3>
+            <p data-i18n="idea.card2Text">Consequential changes should state their purpose, impact, risks and rollback path.</p>
+          </article>
+          <article class="principle-card">
+            <span class="card-index">03</span>
+            <h3 data-i18n="idea.card3Title">Participation by contribution</h3>
+            <p data-i18n="idea.card3Text">Read, question, document, test, translate, design or build. The first useful contribution matters more than a ceremonial label.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section map-section" id="map">
+      <div class="section-heading">
+        <p class="eyebrow" data-i18n="map.eyebrow">Repository architecture</p>
+        <h2 data-i18n="map.title">One world. Clearly separated layers.</h2>
+      </div>
+      <div class="map-grid">
+        <a class="map-card" href="https://github.com/lbabut/aspiland/tree/main/canon">
+          <span class="map-code">/canon</span>
+          <h3 data-i18n="map.canonTitle">Accepted rules</h3>
+          <p data-i18n="map.canonText">Only explicitly accepted and effective documents belong here.</p>
+        </a>
+        <a class="map-card" href="https://github.com/lbabut/aspiland/tree/main/rfc">
+          <span class="map-code">/rfc</span>
+          <h3 data-i18n="map.rfcTitle">Proposals and decisions</h3>
+          <p data-i18n="map.rfcText">Reviewable ideas with status, rationale, risks and history.</p>
+        </a>
+        <a class="map-card" href="https://github.com/lbabut/aspiland/tree/main/projects">
+          <span class="map-code">/projects</span>
+          <h3 data-i18n="map.projectsTitle">Living experiments</h3>
+          <p data-i18n="map.projectsText">Software, research and creative systems with bounded scope.</p>
+        </a>
+        <a class="map-card" href="https://github.com/lbabut/aspiland/tree/main/protocols">
+          <span class="map-code">/protocols</span>
+          <h3 data-i18n="map.protocolsTitle">How change happens</h3>
+          <p data-i18n="map.protocolsText">Procedures for consent, review, continuity and rollback.</p>
+        </a>
+        <a class="map-card" href="https://github.com/lbabut/aspiland/tree/main/public">
+          <span class="map-code">/public</span>
+          <h3 data-i18n="map.publicTitle">Prepared for publication</h3>
+          <p data-i18n="map.publicText">Material reviewed for unrestricted public communication.</p>
+        </a>
+        <a class="map-card" href="https://github.com/lbabut/aspiland/tree/main/archive">
+          <span class="map-code">/archive</span>
+          <h3 data-i18n="map.archiveTitle">Memory, not authority</h3>
+          <p data-i18n="map.archiveText">Historical and superseded material preserved with context.</p>
+        </a>
+      </div>
+    </section>
+
+    <section class="section participation-section" id="participate">
+      <div class="section-heading">
+        <p class="eyebrow" data-i18n="participate.eyebrow">First Commit Kit</p>
+        <h2 data-i18n="participate.title">You do not need permission to begin understanding.</h2>
+      </div>
+      <div class="participation-layout">
+        <ol class="steps">
+          <li>
+            <span>1</span>
+            <div>
+              <h3 data-i18n="participate.step1Title">Read the current map</h3>
+              <p data-i18n="participate.step1Text">Start with the repository README, glossary and current status.</p>
+            </div>
+          </li>
+          <li>
+            <span>2</span>
+            <div>
+              <h3 data-i18n="participate.step2Title">Choose a bounded contribution</h3>
+              <p data-i18n="participate.step2Text">Fix a link, clarify a term, document a project, test an assumption or propose an RFC.</p>
+            </div>
+          </li>
+          <li>
+            <span>3</span>
+            <div>
+              <h3 data-i18n="participate.step3Title">Leave the world clearer</h3>
+              <p data-i18n="participate.step3Text">Explain what changed, why it matters and how it can be corrected or reversed.</p>
+            </div>
+          </li>
+        </ol>
+        <div class="participation-panel">
+          <p class="panel-label" data-i18n="participate.panelLabel">Suggested first paths</p>
+          <a href="https://github.com/lbabut/aspiland/blob/main/CONTRIBUTING.md" data-i18n="participate.link1">Contribution guide <span aria-hidden="true">↗</span></a>
+          <a href="https://github.com/lbabut/aspiland/blob/main/docs/glossary.md" data-i18n="participate.link2">Current glossary <span aria-hidden="true">↗</span></a>
+          <a href="https://github.com/lbabut/aspiland/issues" data-i18n="participate.link3">Open issues <span aria-hidden="true">↗</span></a>
+          <a href="https://github.com/lbabut/aspiland/tree/main/rfc" data-i18n="participate.link4">Read the RFCs <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section status-section" id="status">
+      <div class="status-card">
+        <div>
+          <p class="eyebrow" data-i18n="status.eyebrow">Current signal</p>
+          <h2 data-i18n="status.title">Repository Preview, not community go-live.</h2>
+          <p data-i18n="status.text">The structure, public explanations and contribution controls are being prepared. Security, privacy, licensing, recovery and minimal canonical governance still contain open launch gates.</p>
+        </div>
+        <div class="status-meter" aria-label="Repository Preview status">
+          <div class="status-row"><span data-i18n="status.repository">Repository structure</span><strong data-i18n="status.ready">Foundation ready</strong></div>
+          <div class="status-row"><span data-i18n="status.publication">Public narrative</span><strong data-i18n="status.progress">In progress</strong></div>
+          <div class="status-row"><span data-i18n="status.community">Community launch</span><strong data-i18n="status.notReady">Not ready</strong></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="closing-section">
+      <p class="eyebrow" data-i18n="closing.eyebrow">Transmission ends / contribution begins</p>
+      <h2 data-i18n="closing.title">The repository is open. The future is still a draft.</h2>
+      <a class="button button-primary" href="https://github.com/lbabut/aspiland" data-i18n="closing.button">Open Aspiland on GitHub</a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div>
+      <strong>ASPILAND</strong>
+      <span data-i18n="footer.line">An inspectable experiment in governance, technology and imagination.</span>
+    </div>
+    <div class="footer-links">
+      <a href="https://github.com/lbabut/aspiland/blob/main/SECURITY.md">Security</a>
+      <a href="https://github.com/lbabut/aspiland/blob/main/CODE_OF_CONDUCT.md">Code of Conduct</a>
+      <a href="https://github.com/lbabut/aspiland/blob/main/docs/go-live-checklist.md">Go-live status</a>
+    </div>
+  </footer>
+</body>
+</html>
