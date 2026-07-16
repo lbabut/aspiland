@@ -1,7 +1,7 @@
 # Encrypted offsite backup upload — 2026-07-16
 
-Status: upload confirmed; integrity verification pending  
-Scope: encrypted Git bundle created on Android and uploaded to a private Google Drive folder
+Status: complete; downloaded-copy integrity confirmed  
+Scope: encrypted Git bundle created on Android, uploaded to a private Google Drive folder and verified after download
 
 ## Evidence
 
@@ -19,21 +19,27 @@ Connected Drive metadata confirmed:
 
 No passphrase, checksum value, private folder URL or recovery secret is recorded here.
 
-## Verification boundary
+## Downloaded-copy verification
 
-The connected Drive interface could retrieve the small checksum file but rejected download of the encrypted bundle because its size exceeded the connector limit. The upload is therefore confirmed, but end-to-end integrity is not yet independently verified by this review.
-
-The blocker is complete only after a copy downloaded from the offsite location returns `OK` from:
+The connected Drive interface could not download the encrypted bundle because its size exceeded the connector limit. The repository owner therefore downloaded the offsite copy to Android and ran:
 
 ```bash
 sha256sum -c aspiland-20260716T182905Z.bundle.age.sha256
 ```
 
+The command returned:
+
+```text
+aspiland-20260716T182905Z.bundle.age: OK
+```
+
+This confirms that the copy retrieved from the offsite location matches the checksum created with the encrypted backup.
+
 ## Current decision
 
 - Offsite creation: complete.
 - Private upload: complete.
-- Independent downloaded-copy checksum: pending owner confirmation.
-- Passphrase separation: required and not inspected.
+- Downloaded-copy checksum: complete.
+- Passphrase separation: intentionally private and not inspected by this review.
 
-This is sanitized operational evidence, not publication of the backup location or credentials.
+The durable encrypted offsite-backup gate is complete. This is sanitized operational evidence, not publication of the backup location, checksum or credentials.
