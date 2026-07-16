@@ -1,0 +1,54 @@
+name: Publish repository launch release
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - .github/workflows/publish-repository-launch.yml
+
+permissions:
+  contents: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout complete history
+        uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+
+      - name: Create launch tag
+        env:
+          TAG: repository-launch-2026-07-16
+          TARGET_SHA: 6db6ee93e0f3f239a2e698199be56e10d50e515c
+        run: |
+          set -euo pipefail
+          git fetch --force --tags origin
+          if git ls-remote --exit-code --tags origin "refs/tags/${TAG}" >/dev/null 2>&1; then
+            echo "Tag ${TAG} already exists; leaving it unchanged."
+          else
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git tag -a "${TAG}" "${TARGET_SHA}" -m "Aspiland Repository Launch — 2026-07-16"
+            git push origin "refs/tags/${TAG}"
+          fi
+
+      - name: Publish GitHub release
+        env:
+          GH_TOKEN: ${{ github.token }}
+          TAG: repository-launch-2026-07-16
+          TARGET_SHA: 6db6ee93e0f3f239a2e698199be56e10d50e515c
+        run: |
+          set -euo pipefail
+          if gh release view "${TAG}" --repo "${GITHUB_REPOSITORY}" >/dev/null 2>&1; then
+            echo "Release ${TAG} already exists; leaving it unchanged."
+            exit 0
+          fi
+          git show "${TARGET_SHA}:public/repository-launch-note.md" > /tmp/aspiland-launch-note.md
+          gh release create "${TAG}" \
+            --repo "${GITHUB_REPOSITORY}" \
+            --title "Aspiland Repository Launch — 2026-07-16" \
+            --notes-file /tmp/aspiland-launch-note.md \
+            --verify-tag
