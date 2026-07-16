@@ -1,0 +1,56 @@
+name: Repository recovery rehearsal
+
+on:
+  pull_request:
+    paths:
+      - ".github/workflows/recovery-rehearsal.yml"
+      - "docs/recovery-checklist.md"
+  schedule:
+    - cron: "41 4 1 * *"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: recovery-rehearsal-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  restore-test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - name: Checkout complete Git history
+        uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+
+      - name: Create and verify restorable bundle
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          bundle="${RUNNER_TEMP}/aspiland-recovery.bundle"
+          restored="${RUNNER_TEMP}/aspiland-restored"
+          source_head="$(git rev-parse HEAD)"
+
+          git branch -f recovery-snapshot HEAD
+          git bundle create "$bundle" --all
+          git bundle verify "$bundle"
+
+          git clone --no-local --branch recovery-snapshot "$bundle" "$restored"
+          restored_head="$(git -C "$restored" rev-parse HEAD)"
+
+          test "$source_head" = "$restored_head"
+          git -C "$restored" fsck --full
+
+          test -f "$restored/README.md"
+          test -f "$restored/SECURITY.md"
+          test -f "$restored/docs/go-live-checklist.md"
+          test -f "$restored/docs/recovery-checklist.md"
+
+          rm -rf "$restored"
+          rm -f "$bundle"
+
+          echo "Recovery rehearsal passed for commit $source_head"
