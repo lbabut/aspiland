@@ -1,34 +1,40 @@
 # Launch mode
 
-Status: recommendation; non-canonical  
-Last reviewed: 2026-07-12
+Status: effective repository-launch description; non-canonical  
+Last reviewed: 2026-07-16
 
-## Recommended mode
+## Current mode
 
-Aspiland should target a **Repository Preview** as its next public milestone.
+Aspiland is in **formal public repository launch**.
 
-A Repository Preview means:
+This means:
 
 - the project is publicly inspectable;
-- issues and contributions may be invited;
+- issues and bounded contributions may be invited;
 - active, proposed, historical, fictional and unsupported material are labeled;
-- no claim is made that Aspiland is a sovereign state, production service or fully operating governed community;
-- unresolved risks remain visible in the release-readiness record.
+- repository security, privacy, recovery and onboarding controls are documented;
+- residual risks are recorded rather than hidden;
+- no claim is made that Aspiland is a sovereign state, production service or fully operating governed community.
 
 ## Not included
 
-The preview does not establish:
+The repository launch does not establish:
 
 - legal citizenship or jurisdiction;
 - binding participation obligations;
 - shared financial entitlements;
 - production service guarantees;
 - automated authority over people;
-- accepted community governance beyond the explicit current canon.
+- participant-data systems;
+- accepted community governance beyond explicit current canon;
+- a project-wide reuse license.
 
-## Promotion to formal repository launch
+## Release record
 
-Promotion requires closure or explicit written acceptance of the P0 blockers in `release-readiness.md`, a reviewed commit or tag, a recovery test and a go/no-go decision record.
+- Decision: `docs/decisions/2026-07-16-repository-launch-go.md`
+- Public note: `public/repository-launch-note.md`
+- Release name: **Aspiland Repository Launch — 2026-07-16**
+- Tag: `repository-launch-2026-07-16`
 
 ## Promotion to community launch
 
