@@ -1,7 +1,7 @@
 # Aspiland go-live checklist
 
 Status: working checklist; non-canonical  
-Last reviewed: 2026-07-12
+Last reviewed: 2026-07-16
 
 This checklist separates a public repository launch from a community or governance launch. The second mode carries materially greater privacy, security, accessibility and decision-making obligations.
 
@@ -27,7 +27,7 @@ The following items are go-live blockers unless a written risk acceptance explai
 - [ ] Complete a personal-data review of legacy areas, especially `users/`, `PublicChat.txt`, `Embassies/`, `SharedAssets/`, build output and binary archives.
 - [ ] Decide and document the licensing model for code, documentation, artwork, historical records and contributor-owned material.
 - [x] Publish a security-reporting and exposed-secret procedure in `SECURITY.md`.
-- [ ] Identify at least one primary maintainer and one recovery or succession path for consequential access.
+- [x] Identify the primary maintainer, reserved owner decisions and a documented recovery or succession path in `docs/repository-operations.md` and `docs/recovery-checklist.md`.
 - [ ] Confirm that a backup can be restored and that recovery instructions do not depend on one unavailable person or device.
 - [x] Keep the experimental, non-sovereign and non-production disclaimer visible in the root README.
 - [ ] Record a go/no-go decision with known residual risks and a rollback or unpublish plan.
@@ -41,23 +41,23 @@ The following items are go-live blockers unless a written risk acceptance explai
 - [x] Glossary distinguishes current terms from historical metaphors.
 - [x] Contribution guidance separates canon, RFCs, projects, archive and public material.
 - [x] Add a code of conduct appropriate for a small experimental community.
-- [ ] Ensure every active project has an owner, status, dependencies and safe run instructions.
+- [x] Ensure every active project has an owner, status, dependencies and safe use or run instructions in `projects/README.md`.
 
 ### GitHub controls
 
 - [ ] Protect `main` from accidental force-push and deletion.
-- [ ] Require review or an explicit exception record for consequential changes.
+- [x] Require review or an explicit exception record for consequential changes through `docs/repository-operations.md`.
 - [x] Add issue and pull-request templates that prompt for scope, risk, data handling and rollback.
 - [ ] Enable secret scanning and dependency alerts where available.
 - [ ] Add automated checks for broken links, Markdown structure and accidental generated files.
-- [ ] Define who can merge, publish releases and change repository settings.
+- [x] Define who can merge, publish releases and change repository settings in `docs/repository-operations.md`.
 
 ### Release and communication
 
 - [ ] Choose a release name and tag the reviewed launch commit.
-- [ ] Publish a concise launch note explaining what Aspiland is and is not.
+- [x] Draft a concise launch note explaining what Aspiland is and is not in `public/repository-preview-launch-note.md`.
 - [x] Link prominently to the glossary, security policy, contribution guide and current status.
-- [ ] State which components are active, historical, fictional, unsupported or unsafe to run.
+- [x] State which indexed components are active, conceptual, historical, unsupported or unsafe to run through the launch note and active project inventory.
 - [ ] Test the onboarding path using a new account or a reader unfamiliar with the repository.
 
 ## 4. Additional community or governance gate
@@ -103,10 +103,10 @@ Do not present Aspiland as an operating governed community until these items are
 
 ## 5. Current assessment
 
-Based on the repository review completed on 2026-07-12:
+Based on the repository review updated on 2026-07-16:
 
-- the structure, disclaimers, contribution rules, change control, archive separation and RFC workflow are suitable foundations for a repository launch;
-- the repository should not receive a formal go-live declaration until the secret scan, personal-data review and licensing decision are complete;
+- the structure, disclaimers, contribution rules, change control, archive separation, operational authority, active project inventory and RFC workflow are suitable foundations for a repository launch;
+- the repository should not receive a formal go-live declaration until the secret scan, personal-data review, licensing decision, restore test and go/no-go record are complete;
 - a community or governance launch is not ready until a minimal canonical package and the additional controls in section 4 are explicitly accepted and operational.
 
 This assessment is a repository review, not a legal, security-certification or production-readiness guarantee.
