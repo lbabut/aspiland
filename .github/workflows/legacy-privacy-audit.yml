@@ -1,0 +1,84 @@
+name: Legacy privacy audit
+
+on:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: legacy-privacy-audit-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  audit-current-tree:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+
+      - name: Scan targeted legacy and generated areas
+        run: >-
+          python3 scripts/run_legacy_privacy_scan.py
+          --summary "${RUNNER_TEMP}/legacy-privacy/summary.json"
+          --details "${RUNNER_TEMP}/legacy-privacy/details.json"
+
+      - name: Upload sanitized summary
+        uses: actions/upload-artifact@v4
+        with:
+          name: legacy-privacy-safe-summary
+          path: ${{ runner.temp }}/legacy-privacy/summary.json
+          if-no-files-found: error
+          retention-days: 1
+
+      - name: Encrypt restricted path map
+        shell: bash
+        run: |
+          set -euo pipefail
+          source_file="${RUNNER_TEMP}/legacy-privacy/details.json"
+          output_dir="${RUNNER_TEMP}/legacy-privacy-encrypted"
+          mkdir -p "$output_dir"
+          openssl rand -out "${RUNNER_TEMP}/privacy-key.bin" 32
+          openssl enc -aes-256-cbc -salt -pbkdf2 \
+            -pass file:"${RUNNER_TEMP}/privacy-key.bin" \
+            -in "$source_file" \
+            -out "$output_dir/details.enc"
+          openssl pkeyutl -encrypt -pubin \
+            -inkey scripts/privacy-audit-public.pem \
+            -pkeyopt rsa_padding_mode:oaep \
+            -pkeyopt rsa_oaep_md:sha256 \
+            -in "${RUNNER_TEMP}/privacy-key.bin" \
+            -out "$output_dir/key.enc"
+          rm -f "$source_file" "${RUNNER_TEMP}/privacy-key.bin"
+
+      - name: Upload encrypted path map
+        uses: actions/upload-artifact@v4
+        with:
+          name: legacy-privacy-encrypted-details
+          path: ${{ runner.temp }}/legacy-privacy-encrypted/
+          if-no-files-found: error
+          retention-days: 1
+
+      - name: Report sanitized result
+        shell: bash
+        run: |
+          python3 - "${RUNNER_TEMP}/legacy-privacy/summary.json" <<'PY'
+          import json
+          import sys
+
+          with open(sys.argv[1], encoding="utf-8") as handle:
+              result = json.load(handle)
+
+          print(
+              "Legacy privacy audit: "
+              f"status={result['status']}, "
+              f"files_considered={result['files_considered']}, "
+              f"suspected_locations={result['suspected_locations']}"
+          )
+          for rule_id, count in result["rule_counts"].items():
+              print(f"Rule summary: {rule_id}: {count}")
+          for group, count in result["group_counts"].items():
+              print(f"Group summary: {group}: {count}")
+          PY
