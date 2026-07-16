@@ -1,7 +1,7 @@
 # Governance status
 
 Status: descriptive; non-canonical  
-Last reviewed: 2026-07-12
+Last reviewed: 2026-07-16
 
 ## Accepted and effective
 
@@ -28,4 +28,6 @@ The System Guardian role is active in a bounded operational scope: Observe, Prop
 
 ## Launch implication
 
-Aspiland has enough structure for continued public repository cleanup and an eventual Repository Preview. It does not yet have the accepted operational package needed to claim a fully launched governed community.
+Aspiland has formally launched as a public experimental repository and historical archive.
+
+This repository launch does not activate a fully operating governed community. Community or governance launch still requires a separate accepted operational package and decision covering roles, participation, privacy, accessibility, continuity and shared services.
