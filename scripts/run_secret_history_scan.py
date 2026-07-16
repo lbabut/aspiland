@@ -16,6 +16,7 @@ def main() -> int:
     parser.add_argument("--period", required=True)
     parser.add_argument("--log-opts", required=True)
     parser.add_argument("--summary", required=True)
+    parser.add_argument("--restricted-locations")
     args = parser.parse_args()
 
     runner_temp = Path(os.environ.get("RUNNER_TEMP", "/tmp"))
@@ -81,6 +82,26 @@ def main() -> int:
         json.dumps(safe_summary, indent=2, sort_keys=True) + "\n",
         encoding="utf-8",
     )
+
+    if args.restricted_locations:
+        restricted_path = Path(args.restricted_locations)
+        restricted_path.parent.mkdir(parents=True, exist_ok=True)
+        locations = []
+        for finding in findings:
+            locations.append(
+                {
+                    "commit": str(finding.get("Commit", "")),
+                    "end_line": finding.get("EndLine"),
+                    "file": str(finding.get("File", "")),
+                    "period": args.period,
+                    "rule_id": str(finding.get("RuleID", "unknown")),
+                    "start_line": finding.get("StartLine"),
+                }
+            )
+        restricted_path.write_text(
+            json.dumps(locations, indent=2, sort_keys=True) + "\n",
+            encoding="utf-8",
+        )
 
     try:
         report_path.unlink(missing_ok=True)
