@@ -23,7 +23,7 @@ The following items are go-live blockers unless a written risk acceptance explai
 
 - [x] Run a comprehensive automated secret scan of the current tree and fetched Git history; see `docs/audits/2026-07-16-secret-history-review.md`.
 - [x] Search the connected Google Drive for Aspiland-related duplicate credentials; see `docs/audits/2026-07-16-drive-credential-search.md`.
-- [ ] Search remaining external stores and exports outside the current connector scope, especially Azure DevOps, deployment exports, local devices and independent backups.
+- [x] Review or explicitly accept the uncertainty in remaining external stores and exports outside the connector scope; the owner accepted the residual risk in `docs/decisions/2026-07-16-external-store-risk-acceptance.md`.
 - [x] Dispose of the removed pre-2023 credential candidate; the repository owner confirmed it is invalid and issue #22 records the sanitized disposition.
 - [x] Complete a current-tree personal-data and unsafe-public-material review of targeted legacy areas; see `docs/audits/2026-07-16-legacy-privacy-review.md`.
 - [x] Decide and document the current licensing model: Repository Preview remains without an explicit project-wide license; see `docs/licensing-decision-memo.md`.
@@ -111,7 +111,7 @@ Based on the repository review updated on 2026-07-16:
 
 - the structure, disclaimers, contribution rules, change control, archive separation, operational authority, active project inventory and RFC workflow are suitable foundations for a repository launch;
 - the historical credential candidate has a completed invalidity disposition based on owner attestation;
-- the connected Drive credential search found no Aspiland credential duplicate, while Azure DevOps, local devices and independent backups remain outside the connector review;
+- the connected Drive credential search found no Aspiland credential duplicate, while uncertainty in Azure DevOps, local devices, deployment exports and independent backups is explicitly accepted as a bounded residual risk for repository launch;
 - the targeted current-tree privacy review is complete after contact-data redaction and removal of unreviewed media, local IDE databases, an obsolete photo archive and generated Muminki build output;
 - Repository Preview intentionally remains without an explicit project-wide license;
 - Git-only recovery has been rehearsed successfully, and a private encrypted offsite backup has been created, uploaded and verified after download;
@@ -119,7 +119,7 @@ Based on the repository review updated on 2026-07-16:
 - the unfamiliar-reader onboarding path has been reviewed and repaired, including completion of the previously truncated public website source;
 - future pull requests and pushes to `main` are covered by a redacted change-range secret guard, while full-history review remains separately scheduled and callable;
 - a formal decision record currently sets the repository launch state to **NO-GO**, while allowing the clearly labelled Repository Preview to remain online without additional promotion;
-- the next formal launch review should wait for the remaining external-store review or its explicit risk acceptance, followed by an updated dated decision record;
+- the remaining repository-launch action is a new dated **GO**, **CONDITIONAL GO** or **NO-GO** decision, followed by a release name and tag if the decision permits launch;
 - a community or governance launch is not ready until a minimal canonical package and the additional controls in section 4 are explicitly accepted and operational.
 
 This assessment is a repository review, not a legal, security-certification or production-readiness guarantee.
