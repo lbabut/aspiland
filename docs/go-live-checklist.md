@@ -1,38 +1,38 @@
 # Aspiland go-live checklist
 
-Status: working checklist; non-canonical  
+Status: repository launch complete; community launch pending  
 Last reviewed: 2026-07-16
 
 This checklist separates a public repository launch from a community or governance launch. The second mode carries materially greater privacy, security, accessibility and decision-making obligations.
 
-## 1. Choose the launch mode
+## 1. Launch mode
 
 ### Repository launch
 
 The repository is publicly presented as an experimental body of work. People may read, open issues and propose contributions. This does not create citizenship, jurisdiction, shared services or binding community membership.
 
+**Decision: GO — 2026-07-16.**
+
 ### Community or governance launch
 
 People are invited to participate under shared rules, roles, decisions, services or data-processing arrangements. This requires all repository-launch controls plus an accepted canonical package and operational community protections.
 
-Record the chosen mode before announcing go-live.
+**Decision: not launched.**
 
-## 2. Critical gate for any launch
-
-The following items are go-live blockers unless a written risk acceptance explains why they are deferred.
+## 2. Critical gate for repository launch
 
 - [x] Run a comprehensive automated secret scan of the current tree and fetched Git history; see `docs/audits/2026-07-16-secret-history-review.md`.
 - [x] Search the connected Google Drive for Aspiland-related duplicate credentials; see `docs/audits/2026-07-16-drive-credential-search.md`.
-- [x] Review or explicitly accept the uncertainty in remaining external stores and exports outside the connector scope; the owner accepted the residual risk in `docs/decisions/2026-07-16-external-store-risk-acceptance.md`.
+- [x] Review or explicitly accept the uncertainty in remaining external stores and exports; see `docs/decisions/2026-07-16-external-store-risk-acceptance.md`.
 - [x] Dispose of the removed pre-2023 credential candidate; the repository owner confirmed it is invalid and issue #22 records the sanitized disposition.
-- [x] Complete a current-tree personal-data and unsafe-public-material review of targeted legacy areas; see `docs/audits/2026-07-16-legacy-privacy-review.md`.
-- [x] Decide and document the current licensing model: Repository Preview remains without an explicit project-wide license; see `docs/licensing-decision-memo.md`.
-- [x] Publish a security-reporting and exposed-secret procedure in `SECURITY.md`.
-- [x] Identify the primary maintainer, reserved owner decisions and a documented recovery or succession path in `docs/repository-operations.md` and `docs/recovery-checklist.md`.
-- [x] Confirm that a restorable Git bundle can be created and restored on a clean runner without the owner's device; see `docs/audits/2026-07-16-recovery-rehearsal.md`.
+- [x] Complete a current-tree personal-data and unsafe-public-material review; see `docs/audits/2026-07-16-legacy-privacy-review.md`.
+- [x] Decide and document the current licensing model: the repository remains without an explicit project-wide license; see `docs/licensing-decision-memo.md`.
+- [x] Publish security-reporting and exposed-secret procedures in `SECURITY.md`.
+- [x] Identify the primary maintainer, reserved decisions and recovery or succession path in `docs/repository-operations.md` and `docs/recovery-checklist.md`.
+- [x] Confirm that a restorable Git bundle can be created and restored on a clean runner; see `docs/audits/2026-07-16-recovery-rehearsal.md`.
 - [x] Create, privately upload and verify a durable encrypted offsite backup; see `docs/audits/2026-07-16-offsite-backup-upload.md`.
 - [x] Keep the experimental, non-sovereign and non-production disclaimer visible in the root README.
-- [x] Record a go/no-go decision with known residual risks and a rollback or unpublish plan; the current decision is formal **NO-GO** in `docs/decisions/2026-07-16-repository-launch-go-no-go.md`.
+- [x] Record the final launch decision, residual risks and rollback triggers; see `docs/decisions/2026-07-16-repository-launch-go.md`.
 
 ## 3. Repository-launch readiness
 
@@ -51,17 +51,17 @@ The following items are go-live blockers unless a written risk acceptance explai
 - [x] Require review or an explicit exception record for consequential changes through `docs/repository-operations.md`.
 - [x] Add issue and pull-request templates that prompt for scope, risk, data handling and rollback.
 - [x] Confirm GitHub platform secret scanning and dependency alerts where available; completed by owner attestation in issue #15.
-- [x] Add a redacted secret guard for every pull request and push to `main` through `.github/workflows/secret-change-guard.yml`.
-- [x] Add an independently callable and scheduled full-history secret audit through `.github/workflows/secret-history-scan.yml`.
-- [x] Add automated checks for broken links, Markdown structure and accidental generated files through `.github/workflows/repository-quality.yml`.
-- [x] Define who can merge, publish releases and change repository settings in `docs/repository-operations.md`.
+- [x] Add a redacted secret guard for every pull request and push to `main`.
+- [x] Add a scheduled and manually callable full-history secret audit.
+- [x] Add automated checks for links, Markdown structure, generated files and static-site integrity.
+- [x] Define who can merge, publish releases and change repository settings.
 
 ### Release and communication
 
-- [ ] Choose a release name and tag the reviewed launch commit after a later GO or CONDITIONAL GO decision.
-- [x] Draft a concise launch note explaining what Aspiland is and is not in `public/repository-preview-launch-note.md`.
+- [x] Choose release name **Aspiland Repository Launch — 2026-07-16** and tag `repository-launch-2026-07-16`.
+- [x] Publish the formal launch note in `public/repository-launch-note.md`.
 - [x] Link prominently to the glossary, security policy, contribution guide and current status.
-- [x] State which indexed components are active, conceptual, historical, unsupported or unsafe to run through the launch note and active project inventory.
+- [x] State which indexed components are active, conceptual, historical, unsupported or unsafe to run.
 - [x] Test the onboarding path as an unfamiliar unauthenticated reader; see `docs/audits/2026-07-16-unfamiliar-reader-onboarding.md`.
 
 ## 4. Additional community or governance gate
@@ -105,37 +105,32 @@ Do not present Aspiland as an operating governed community until these items are
 - [ ] Keep experimental tokens and budgets opt-in and separate from identity, membership, ownership and essential access.
 - [ ] Define service availability, support limits, incident handling and shutdown procedures before operating shared infrastructure.
 
-## 5. Current assessment
+## 5. Launch assessment
 
 Based on the repository review updated on 2026-07-16:
 
-- the structure, disclaimers, contribution rules, change control, archive separation, operational authority, active project inventory and RFC workflow are suitable foundations for a repository launch;
-- the historical credential candidate has a completed invalidity disposition based on owner attestation;
-- the connected Drive credential search found no Aspiland credential duplicate, while uncertainty in Azure DevOps, local devices, deployment exports and independent backups is explicitly accepted as a bounded residual risk for repository launch;
-- the targeted current-tree privacy review is complete after contact-data redaction and removal of unreviewed media, local IDE databases, an obsolete photo archive and generated Muminki build output;
-- Repository Preview intentionally remains without an explicit project-wide license;
-- Git-only recovery has been rehearsed successfully, and a private encrypted offsite backup has been created, uploaded and verified after download;
-- branch protection and platform security settings are recorded complete by owner attestation;
-- the unfamiliar-reader onboarding path has been reviewed and repaired, including completion of the previously truncated public website source;
-- future pull requests and pushes to `main` are covered by a redacted change-range secret guard, while full-history review remains separately scheduled and callable;
-- a formal decision record currently sets the repository launch state to **NO-GO**, while allowing the clearly labelled Repository Preview to remain online without additional promotion;
-- the remaining repository-launch action is a new dated **GO**, **CONDITIONAL GO** or **NO-GO** decision, followed by a release name and tag if the decision permits launch;
-- a community or governance launch is not ready until a minimal canonical package and the additional controls in section 4 are explicitly accepted and operational.
+- all repository-launch critical gates are complete or explicitly resolved;
+- the external-store uncertainty is accepted as a bounded residual risk;
+- the repository remains without a project-wide license;
+- the recovery rehearsal and verified offsite backup are complete;
+- onboarding and static-site integrity checks are active;
+- future changes remain covered by repository-quality and secret controls;
+- formal public repository launch is **GO**;
+- community or governance launch remains a separate later milestone.
 
 This assessment is a repository review, not a legal, security-certification or production-readiness guarantee.
 
-## 6. Go/no-go record template
+## 6. Release record
 
 ```text
-Launch mode:
-Target date:
-Reviewed commit or tag:
-Decision: GO / CONDITIONAL GO / NO-GO
-Decision-makers:
-Completed critical controls:
-Accepted residual risks:
-Open blockers:
-Communication plan:
-Rollback or unpublish trigger:
-Next review date:
+Launch mode: formal public repository launch
+Launch date: 2026-07-16
+Release name: Aspiland Repository Launch — 2026-07-16
+Tag: repository-launch-2026-07-16
+Decision: GO
+Decision-maker: repository owner
+Accepted residual risks: external-store uncertainty; no project-wide license; legacy provenance and support limitations
+Open repository-launch blockers: none
+Rollback triggers: documented in the GO decision and SECURITY.md
+Next review date: 2026-08-16
 ```
