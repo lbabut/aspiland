@@ -30,7 +30,7 @@ The following items are go-live blockers unless a written risk acceptance explai
 - [x] Publish a security-reporting and exposed-secret procedure in `SECURITY.md`.
 - [x] Identify the primary maintainer, reserved owner decisions and a documented recovery or succession path in `docs/repository-operations.md` and `docs/recovery-checklist.md`.
 - [x] Confirm that a restorable Git bundle can be created and restored on a clean runner without the owner's device; see `docs/audits/2026-07-16-recovery-rehearsal.md`.
-- [ ] Create, upload and verify a durable encrypted offsite copy; an Android/Termux procedure is available in `docs/android-offsite-backup.md`.
+- [ ] Verify the downloaded copy of the durable encrypted offsite backup. Creation and private upload are complete; see `docs/audits/2026-07-16-offsite-backup-upload.md`.
 - [x] Keep the experimental, non-sovereign and non-production disclaimer visible in the root README.
 - [x] Record a go/no-go decision with known residual risks and a rollback or unpublish plan; the current decision is formal **NO-GO** in `docs/decisions/2026-07-16-repository-launch-go-no-go.md`.
 
@@ -58,11 +58,11 @@ The following items are go-live blockers unless a written risk acceptance explai
 
 ### Release and communication
 
-- [ ] Choose a release name and tag the reviewed launch commit.
+- [ ] Choose a release name and tag the reviewed launch commit after a later GO or CONDITIONAL GO decision.
 - [x] Draft a concise launch note explaining what Aspiland is and is not in `public/repository-preview-launch-note.md`.
 - [x] Link prominently to the glossary, security policy, contribution guide and current status.
 - [x] State which indexed components are active, conceptual, historical, unsupported or unsafe to run through the launch note and active project inventory.
-- [ ] Test the onboarding path using a new account or a reader unfamiliar with the repository.
+- [x] Test the onboarding path as an unfamiliar unauthenticated reader; see `docs/audits/2026-07-16-unfamiliar-reader-onboarding.md`.
 
 ## 4. Additional community or governance gate
 
@@ -114,11 +114,12 @@ Based on the repository review updated on 2026-07-16:
 - the connected Drive credential search found no Aspiland credential duplicate, while Azure DevOps, local devices and independent backups remain outside the connector review;
 - the targeted current-tree privacy review is complete after contact-data redaction and removal of unreviewed media, local IDE databases, an obsolete photo archive and generated Muminki build output;
 - Repository Preview intentionally remains without an explicit project-wide license;
-- Git-only recovery has been rehearsed successfully, but the durable encrypted offsite copy still requires creation, upload and download verification;
+- Git-only recovery has been rehearsed successfully, and a private encrypted offsite backup has been created and uploaded; downloaded-copy checksum verification remains open;
 - branch protection and platform security settings are recorded complete by owner attestation;
+- the unfamiliar-reader onboarding path has been reviewed and repaired, including completion of the previously truncated public website source;
 - future pull requests and pushes to `main` are covered by a redacted change-range secret guard, while full-history review remains separately scheduled and callable;
 - a formal decision record currently sets the repository launch state to **NO-GO**, while allowing the clearly labelled Repository Preview to remain online without additional promotion;
-- the next formal launch review should wait for the remaining external-store review, verified offsite backup, unfamiliar-reader onboarding test and an updated dated decision record;
+- the next formal launch review should wait for the remaining external-store review, downloaded-copy backup verification and an updated dated decision record;
 - a community or governance launch is not ready until a minimal canonical package and the additional controls in section 4 are explicitly accepted and operational.
 
 This assessment is a repository review, not a legal, security-certification or production-readiness guarantee.
