@@ -16,7 +16,6 @@ def main() -> int:
     parser.add_argument("--period", required=True)
     parser.add_argument("--log-opts", required=True)
     parser.add_argument("--summary", required=True)
-    parser.add_argument("--restricted-locations")
     args = parser.parse_args()
 
     runner_temp = Path(os.environ.get("RUNNER_TEMP", "/tmp"))
@@ -53,19 +52,24 @@ def main() -> int:
     )
 
     findings: list[dict[str, object]] = []
+    report_parse_error = False
     if report_path.is_file() and report_path.stat().st_size:
         try:
             loaded = json.loads(report_path.read_text(encoding="utf-8"))
             if isinstance(loaded, list):
                 findings = [item for item in loaded if isinstance(item, dict)]
+            else:
+                report_parse_error = True
         except (json.JSONDecodeError, OSError):
-            findings = []
+            report_parse_error = True
 
     rule_counts = collections.Counter(
         str(finding.get("RuleID", "unknown")) for finding in findings
     )
 
-    if findings:
+    if report_parse_error:
+        status = "scanner-error"
+    elif findings:
         status = "findings"
     elif completed.returncode == 0:
         status = "passed"
@@ -82,26 +86,6 @@ def main() -> int:
         json.dumps(safe_summary, indent=2, sort_keys=True) + "\n",
         encoding="utf-8",
     )
-
-    if args.restricted_locations:
-        restricted_path = Path(args.restricted_locations)
-        restricted_path.parent.mkdir(parents=True, exist_ok=True)
-        locations = []
-        for finding in findings:
-            locations.append(
-                {
-                    "commit": str(finding.get("Commit", "")),
-                    "end_line": finding.get("EndLine"),
-                    "file": str(finding.get("File", "")),
-                    "period": args.period,
-                    "rule_id": str(finding.get("RuleID", "unknown")),
-                    "start_line": finding.get("StartLine"),
-                }
-            )
-        restricted_path.write_text(
-            json.dumps(locations, indent=2, sort_keys=True) + "\n",
-            encoding="utf-8",
-        )
 
     try:
         report_path.unlink(missing_ok=True)
