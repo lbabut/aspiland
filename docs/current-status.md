@@ -6,13 +6,13 @@ Aspiland is in **Repository Preview**.
 
 The repository and static website are public and inspectable. Repository Preview is a communication and exploration milestone, not a formal repository, community or governance launch.
 
-Completed repository-launch work includes privacy cleanup of the current tree, a documented temporary no-license position, repository security controls, full-history secret review, recovery rehearsal, a verified private encrypted offsite backup and an unfamiliar-reader onboarding review.
+Completed repository-launch work includes privacy cleanup of the current tree, a documented temporary no-license position, repository security controls, full-history secret review, recovery rehearsal, a verified private encrypted offsite backup, unfamiliar-reader onboarding review and explicit acceptance of the remaining external-store uncertainty.
 
-The remaining repository-launch gates are tracked in [`docs/go-live-checklist.md`](go-live-checklist.md).
+The current launch state is tracked in [`docs/go-live-checklist.md`](go-live-checklist.md).
 
 ## Safe current description
 
-Aspiland is a public experimental repository and historical archive in Repository Preview, under active review and controlled cleanup.
+Aspiland is a public experimental repository and historical archive in Repository Preview, under controlled review and maintenance.
 
 ## Current boundaries
 
@@ -21,12 +21,12 @@ Aspiland is a public experimental repository and historical archive in Repositor
 - A merged proposal is not automatically canonical.
 - Public experiments do not establish extraordinary technical claims.
 - The encrypted offsite backup has been uploaded privately and its downloaded copy passed checksum verification.
-- External stores outside the connected Google Drive scope, especially Azure DevOps and independent local or deployment copies, have not been fully reviewed through the available connectors.
-- Formal go-live remains **NO-GO** until that residual external-store risk is reviewed or explicitly accepted through a new dated decision record.
+- External stores outside the connected Google Drive scope have not been exhaustively reviewed; the repository owner accepted that bounded uncertainty for repository launch in [`docs/decisions/2026-07-16-external-store-risk-acceptance.md`](decisions/2026-07-16-external-store-risk-acceptance.md).
+- This acceptance does not cover production integrations, participant-data processing or a community or governance launch.
+- Formal go-live remains **NO-GO** until a new dated launch decision replaces the existing record.
 
 ## Next milestone
 
-1. Review or explicitly accept the remaining external-store risk.
-2. Record a new **GO**, **CONDITIONAL GO** or **NO-GO** decision for formal repository launch.
+Record a new **GO**, **CONDITIONAL GO** or **NO-GO** decision for formal repository launch. If launch is approved, choose a release name and tag the reviewed commit.
 
 Community or governance launch remains a separate, later milestone with additional controls.
