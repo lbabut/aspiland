@@ -9,6 +9,7 @@ on:
 
 permissions:
   contents: write
+  issues: write
 
 jobs:
   publish:
@@ -44,11 +45,25 @@ jobs:
           set -euo pipefail
           if gh release view "${TAG}" --repo "${GITHUB_REPOSITORY}" >/dev/null 2>&1; then
             echo "Release ${TAG} already exists; leaving it unchanged."
-            exit 0
+          else
+            git show "${TARGET_SHA}:public/repository-launch-note.md" > /tmp/aspiland-launch-note.md
+            gh release create "${TAG}" \
+              --repo "${GITHUB_REPOSITORY}" \
+              --title "Aspiland Repository Launch — 2026-07-16" \
+              --notes-file /tmp/aspiland-launch-note.md \
+              --verify-tag
           fi
-          git show "${TARGET_SHA}:public/repository-launch-note.md" > /tmp/aspiland-launch-note.md
-          gh release create "${TAG}" \
+
+      - name: Verify release and record evidence
+        env:
+          GH_TOKEN: ${{ github.token }}
+          TAG: repository-launch-2026-07-16
+          TARGET_SHA: 6db6ee93e0f3f239a2e698199be56e10d50e515c
+        run: |
+          set -euo pipefail
+          release_url="$(gh release view "${TAG}" --repo "${GITHUB_REPOSITORY}" --json url --jq .url)"
+          tagged_sha="$(git rev-list -n 1 "${TAG}")"
+          test "${tagged_sha}" = "${TARGET_SHA}"
+          gh issue comment 7 \
             --repo "${GITHUB_REPOSITORY}" \
-            --title "Aspiland Repository Launch — 2026-07-16" \
-            --notes-file /tmp/aspiland-launch-note.md \
-            --verify-tag
+            --body "Formal repository release published and verified: ${release_url}\n\nTag \`${TAG}\` resolves to reviewed launch commit \`${TARGET_SHA}\`."
