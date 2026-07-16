@@ -30,7 +30,7 @@ The following items are go-live blockers unless a written risk acceptance explai
 - [x] Identify the primary maintainer, reserved owner decisions and a documented recovery or succession path in `docs/repository-operations.md` and `docs/recovery-checklist.md`.
 - [x] Confirm that a restorable Git bundle can be created and restored on a clean runner without the owner's device; see `docs/audits/2026-07-16-recovery-rehearsal.md`. A durable encrypted offsite copy remains open.
 - [x] Keep the experimental, non-sovereign and non-production disclaimer visible in the root README.
-- [ ] Record a go/no-go decision with known residual risks and a rollback or unpublish plan.
+- [x] Record a go/no-go decision with known residual risks and a rollback or unpublish plan; the current decision is formal **NO-GO** in `docs/decisions/2026-07-16-repository-launch-go-no-go.md`.
 
 ## 3. Repository-launch readiness
 
@@ -111,7 +111,8 @@ Based on the repository review updated on 2026-07-16:
 - the Git-only recovery mechanism has been successfully rehearsed on a clean runner, but a durable encrypted offsite copy remains open;
 - the automated Git history review found no suspected secrets from 2023 through the review date and one unique removed pre-2023 candidate whose credential disposition remains unresolved;
 - future pull requests and pushes to `main` are covered by a redacted change-range secret guard, while full-history review remains separately scheduled and callable;
-- the repository should not receive a formal go-live declaration until the historical credential candidate, external-store search, personal-data review, licensing decision, durable offsite backup and go/no-go record are resolved or explicitly accepted;
+- a formal decision record currently sets the repository launch state to **NO-GO**, while allowing the clearly labelled Repository Preview to remain online without additional promotion;
+- the repository should not receive a formal go-live declaration until the historical credential candidate, external-store search, personal-data review, licensing decision and durable offsite backup are resolved or explicitly accepted in a later decision record;
 - a community or governance launch is not ready until a minimal canonical package and the additional controls in section 4 are explicitly accepted and operational.
 
 This assessment is a repository review, not a legal, security-certification or production-readiness guarantee.
