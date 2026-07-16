@@ -11,33 +11,36 @@ Use this checklist to ensure Aspiland can be recovered without depending on one 
 - [ ] Inventory GitHub SSH keys, personal access tokens, installed apps and deploy keys.
 - [ ] Remove unknown, unused or unscoped credentials.
 - [ ] Identify an emergency recovery contact or documented succession mechanism.
-- [ ] Record which actions require the legal principal rather than an operational maintainer.
+- [x] Record which actions require the legal principal rather than an operational maintainer in `docs/repository-operations.md`.
 
 Do not commit account identifiers, recovery codes, private keys or token values to this repository.
 
 ## Backup
 
-- [ ] Create a mirror clone containing all refs.
-- [ ] Record the backup date, source commit and tool versions.
+- [ ] Create and retain a mirror clone or all-ref bundle suitable for recovery.
+- [ ] Record the retained backup date, source commit and tool versions.
 - [ ] Store at least one encrypted copy outside GitHub.
 - [ ] Include Git LFS objects, releases, issue or wiki exports where applicable.
 - [ ] Define retention and replacement intervals.
 - [ ] Verify that backup access does not depend solely on the account being recovered.
 
+A temporary all-ref Git bundle was successfully created and restored during the 2026-07-16 rehearsal, but it was deliberately deleted after the test and is not a retained backup.
+
 ## Restore test
 
-- [ ] Restore the mirror into a disposable private test repository or local bare repository.
-- [ ] Verify branches, tags and default-branch history.
-- [ ] Verify representative text and binary files.
+- [x] Restore an all-ref Git bundle into a disposable clean clone.
+- [ ] Explicitly compare every branch, tag and default-branch history in the restored copy.
+- [x] Verify representative text files and repository entry points.
+- [ ] Verify representative binary files after their safety and licensing status is known.
 - [ ] Verify Git LFS and release artifacts where used.
-- [ ] Check that documentation links and essential project entry points remain understandable.
-- [ ] Record the result without publishing private infrastructure details.
+- [x] Check that essential documentation entry points remain available after restore.
+- [x] Record the result without publishing private infrastructure details in `docs/audits/2026-07-16-recovery-rehearsal.md`.
 
 ## Operational continuity
 
-- [ ] List active maintainers and their scopes.
-- [ ] Document how to suspend compromised automation or credentials.
-- [ ] Document release, rollback and incident communication paths.
+- [x] List active repository maintainers and their scopes in `docs/repository-operations.md`.
+- [x] Document narrow emergency containment and compromised-credential handling in `docs/repository-operations.md` and `SECURITY.md`.
+- [x] Document release, rollback and incident communication paths in repository operations and go-live guidance.
 - [ ] Ensure essential configuration can be recreated from safe templates and secret-store references.
 - [ ] Review inactive projects and mark them archived rather than leaving ambiguous support expectations.
 
@@ -56,6 +59,8 @@ For credential or personal-data exposure:
 
 ## Completion record
 
+Use `docs/audits/` for dated sanitized records. Do not publish private backup locations or access details.
+
 ```text
 Date:
 Reviewed commit:
@@ -67,3 +72,5 @@ Problems found:
 Corrective actions:
 Next test date:
 ```
+
+Latest rehearsal: `docs/audits/2026-07-16-recovery-rehearsal.md`.
