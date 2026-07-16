@@ -2,31 +2,39 @@
 
 Last updated: 2026-07-16
 
-Aspiland is in **Repository Preview**.
+Aspiland has completed **formal public repository launch**.
 
-The repository and static website are public and inspectable. Repository Preview is a communication and exploration milestone, not a formal repository, community or governance launch.
+The repository and static website are public and inspectable. People may read the material, open issues and propose bounded contributions through the documented repository paths.
 
-Completed repository-launch work includes privacy cleanup of the current tree, a documented temporary no-license position, repository security controls, full-history secret review, recovery rehearsal, a verified private encrypted offsite backup, unfamiliar-reader onboarding review and explicit acceptance of the remaining external-store uncertainty.
+The formal decision is recorded in [`docs/decisions/2026-07-16-repository-launch-go.md`](decisions/2026-07-16-repository-launch-go.md).
 
-The current launch state is tracked in [`docs/go-live-checklist.md`](go-live-checklist.md).
+## Current description
 
-## Safe current description
+Aspiland is a formally launched public experimental repository and historical archive under controlled maintenance.
 
-Aspiland is a public experimental repository and historical archive in Repository Preview, under controlled review and maintenance.
+## Launch state
 
-## Current boundaries
+- Repository launch controls are complete or explicitly resolved.
+- Recovery and rollback paths are documented.
+- The encrypted offsite backup was verified after download.
+- Remaining external-store uncertainty is an accepted residual risk for repository launch.
 
-- Historical and user-area material is not automatically approved for promotion, reuse or execution.
-- Repository visibility does not grant a blanket license.
-- A merged proposal is not automatically canonical.
-- Public experiments do not establish extraordinary technical claims.
-- The encrypted offsite backup has been uploaded privately and its downloaded copy passed checksum verification.
-- External stores outside the connected Google Drive scope have not been exhaustively reviewed; the repository owner accepted that bounded uncertainty for repository launch in [`docs/decisions/2026-07-16-external-store-risk-acceptance.md`](decisions/2026-07-16-external-store-risk-acceptance.md).
-- This acceptance does not cover production integrations, participant-data processing or a community or governance launch.
-- Formal go-live remains **NO-GO** until a new dated launch decision replaces the existing record.
+## Boundaries
+
+- This launch covers the public repository and website.
+- Community or governance launch remains separate.
+- Historical material is not automatically current, supported or reusable.
+- Public visibility does not create a project-wide reuse license.
+- Production services and participant-data systems are outside this launch.
+
+## Release
+
+- Name: **Aspiland Repository Launch — 2026-07-16**
+- Tag: `repository-launch-2026-07-16`
+- Public note: [`public/repository-launch-note.md`](../public/repository-launch-note.md)
 
 ## Next milestone
 
-Record a new **GO**, **CONDITIONAL GO** or **NO-GO** decision for formal repository launch. If launch is approved, choose a release name and tag the reviewed commit.
+Maintain the launched repository, review the decision by 2026-08-16 and continue classifying legacy material.
 
-Community or governance launch remains a separate, later milestone with additional controls.
+Community or governance launch remains a separate later milestone.

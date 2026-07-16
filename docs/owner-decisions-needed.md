@@ -1,7 +1,7 @@
 # Repository owner decisions needed
 
 Status: decision queue; non-canonical  
-Last reviewed: 2026-07-12
+Last reviewed: 2026-07-16
 
 These items cannot be completed solely through operational cleanup because they change authority, legal permissions or accepted governance.
 
@@ -17,6 +17,16 @@ Initial scope:
 - narrow emergency Contain.
 
 Elevated `Administer` capability remains separately authorized per concrete task. The role must be reviewed after its first three consequential post-effective actions or by 2026-10-10.
+
+## Resolved — formal repository launch
+
+Approved on 2026-07-16.
+
+- Decision: **GO**;
+- release name: **Aspiland Repository Launch — 2026-07-16**;
+- tag: `repository-launch-2026-07-16`;
+- residual external-store uncertainty: explicitly accepted;
+- rollback and review triggers: recorded in `docs/decisions/2026-07-16-repository-launch-go.md`.
 
 ## 1. Data lifecycle protocol — RFC 0006
 
@@ -39,19 +49,16 @@ The owner must explicitly choose licenses only after confirming rights. Separate
 - historical contributions and conversations;
 - datasets and generated outputs.
 
-No license has been selected by the current proposal.
+No project-wide license has been selected. Formal repository launch does not change this position.
 
-## 3. Historical contact-data exposure
+## 3. Community or governance launch
 
-A removed public JSON record remains potentially reachable in history. The owner must privately confirm whether the record contained their own data or another person's data and authorize any disruptive history rewrite after reviewing sensitivity and exposure.
+A later community-launch decision must record:
 
-## 4. Repository Preview go/no-go
-
-After P0 evidence is complete, record:
-
-- reviewed commit or tag;
-- decision and decision-maker;
-- accepted residual risks;
-- announcement scope;
-- rollback or unpublish trigger;
-- next review date.
+- the accepted minimal canonical package;
+- roles and authority limits;
+- participation, notice, appeal and moderation procedures;
+- operational privacy and data-lifecycle controls;
+- accessibility and continuity safeguards;
+- service ownership, incident response and shutdown procedures;
+- reviewed commit or tag, residual risks and rollback triggers.

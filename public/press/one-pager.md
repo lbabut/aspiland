@@ -1,18 +1,18 @@
 # Aspiland in one page
 
 Status: public communication material; non-canonical  
-Edition: Repository Preview  
-Last reviewed: 2026-07-12
+Edition: Formal Repository Launch  
+Last reviewed: 2026-07-16
 
 ## What is Aspiland?
 
-Aspiland is an open repository and long-running laboratory for digital governance, software, artificial life, research and creative experiments.
+Aspiland is a formally launched public repository and long-running laboratory for digital governance, software, artificial life, research and creative experiments.
 
 It explores a simple question:
 
 > **What if a civilization had version history?**
 
-The repository preserves the project's unusual history while making an important distinction between accepted rules, proposals, working procedures, software experiments, material prepared for publication and archives.
+The repository preserves the project's unusual history while distinguishing accepted rules, proposals, working procedures, software experiments, material prepared for publication and archives.
 
 Aspiland is an experiment, not a sovereign state, legal jurisdiction or production public service.
 
@@ -32,14 +32,14 @@ Many systems hide how rules changed, who proposed them, what assumptions they re
 - `rfc/` — proposals and durable decision records;
 - `protocols/` — recurring procedures for review, consent, continuity and rollback;
 - `projects/` — bounded software, research and creative experiments;
-- `public/` — material reviewed for unrestricted public communication;
+- `public/` — reviewed public communication material;
 - `archive/` — historical and superseded material preserved with context.
 
 A document is not binding merely because it is old, public, merged or written in constitutional language.
 
 ## What can people do now?
 
-During Repository Preview, people can:
+People can:
 
 - read and inspect the repository;
 - question assumptions and terminology;
@@ -48,17 +48,17 @@ During Repository Preview, people can:
 - test or document a bounded project;
 - submit an RFC or another reviewable contribution.
 
-The project is not yet inviting people into an operating governed community or shared public service.
+The project is not inviting people into an operating governed community or shared production service through this launch.
 
 ## Current status
 
-The repository has a clearer structure, glossary, contribution process, code of conduct, security-reporting procedure and change-control baseline.
-
-Important launch work remains open, including comprehensive secret and personal-data review, licensing decisions, recovery testing, project ownership, repository controls and a minimal accepted canonical package for any future community launch.
+Formal public repository launch was approved on 2026-07-16 after completion or explicit resolution of the repository security, privacy, recovery, onboarding and operational gates.
 
 The honest current label is:
 
-> **Repository Preview — an open prototype of a digital civilization.**
+> **Formally launched public repository — an inspectable experiment and historical archive.**
+
+The repository currently has no project-wide license. Public visibility does not create a blanket right to reuse material.
 
 ## Selected concepts
 
@@ -91,7 +91,8 @@ Aspiland does not ask readers to believe that the world is complete. It invites 
 ## Public links
 
 - Repository: `https://github.com/lbabut/aspiland`
+- Launch note: `public/repository-launch-note.md`
+- Current status: `docs/current-status.md`
 - Current terminology: `docs/glossary.md`
 - Contribution guide: `CONTRIBUTING.md`
 - Security reporting: `SECURITY.md`
-- Launch readiness: `docs/go-live-checklist.md`

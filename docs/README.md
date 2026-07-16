@@ -4,6 +4,7 @@ Repository-wide explanatory material lives here. These files describe current st
 
 ## Orientation
 
+- [`current-status.md`](current-status.md) — current formal repository-launch state and boundaries.
 - [`repository-map.md`](repository-map.md) — current and legacy directory map.
 - [`glossary.md`](glossary.md) — preferred terminology and historical-term interpretation.
 - [`governance-status.md`](governance-status.md) — accepted versus proposed governance.
@@ -11,15 +12,17 @@ Repository-wide explanatory material lives here. These files describe current st
 
 ## Launch and operations
 
-- [`release-readiness.md`](release-readiness.md) — concise current launch assessment.
-- [`go-live-checklist.md`](go-live-checklist.md) — detailed repository and community gates.
+- [`release-readiness.md`](release-readiness.md) — concise post-launch assessment and ongoing work.
+- [`go-live-checklist.md`](go-live-checklist.md) — completed repository-launch evidence and separate community gates.
+- [`launch-mode.md`](launch-mode.md) — effective launch mode and exclusions.
 - [`review-queue.md`](review-queue.md) — prioritized remaining work.
 - [`project-inventory.md`](project-inventory.md) — active and legacy project readiness.
 - [`recovery-checklist.md`](recovery-checklist.md) — backup, restore and account-continuity checks.
-- [`preview-announcement-draft.md`](preview-announcement-draft.md) — unpublished Repository Preview draft.
-- [`licensing.md`](licensing.md) — current unresolved licensing status.
+- [`licensing-decision-memo.md`](licensing-decision-memo.md) — current no-project-wide-license position.
 
 ## Records
 
 - [`audits/`](audits/) — dated review records with scope and limitations.
-- [`decisions/`](decisions/) — operational decisions that are not canonical governance.
+- [`decisions/`](decisions/) — operational decisions, including the formal repository-launch GO record.
+
+The current public launch note is [`../public/repository-launch-note.md`](../public/repository-launch-note.md). Earlier Preview drafts remain historical records.
