@@ -6,7 +6,7 @@ This repository is an experiment, not a sovereign state, production service or c
 
 ## Repository Preview
 
-Aspiland is preparing a public **Repository Preview**: an inspectable prototype of a digital civilization, not a community or governance go-live.
+Aspiland is currently in public **Repository Preview**: an inspectable prototype of a digital civilization, not a community or governance go-live.
 
 > **A world you do not join through a form. You enter through a commit.**
 
@@ -15,9 +15,9 @@ Aspiland is preparing a public **Repository Preview**: an inspectable prototype 
 - [`public/brand/README.md`](public/brand/README.md) — brand, voice and visual direction;
 - [`public/press/one-pager.md`](public/press/one-pager.md) — concise public introduction;
 - [`public/onboarding/first-commit-kit.md`](public/onboarding/first-commit-kit.md) — path to a first bounded contribution;
-- [`public/campaign/repository-preview.md`](public/campaign/repository-preview.md) — launch campaign and reusable messages.
+- [`public/campaign/repository-preview.md`](public/campaign/repository-preview.md) — reusable Repository Preview messages.
 
-The website is prepared for GitHub Pages deployment after the repository publishing source is configured to GitHub Actions and the relevant launch review is complete.
+The static website is published through GitHub Pages from the reviewed source in [`site/`](site/).
 
 ## Start here
 
@@ -26,12 +26,13 @@ The website is prepared for GitHub Pages deployment after the repository publish
 - [`protocols/`](protocols/) — procedures for amendments, consent, review and rollback.
 - [`projects/`](projects/) — active experiments, including [`UNIVERSE / MERCY`](projects/universe-mercy/).
 - [`archive/`](archive/) — preserved legacy and superseded material.
-- [`public/`](public/) — material intentionally prepared for unrestricted publication.
+- [`public/`](public/) — material intentionally prepared for public communication; public visibility does not grant a blanket reuse license.
 - [`docs/repository-map.md`](docs/repository-map.md) — map of legacy and current areas.
 - [`docs/project-inventory.md`](docs/project-inventory.md) — current and legacy project readiness inventory.
 - [`docs/glossary.md`](docs/glossary.md) — current terminology and interpretation of historical terms.
+- [`docs/current-status.md`](docs/current-status.md) — current public phase and remaining boundaries.
 - [`docs/go-live-checklist.md`](docs/go-live-checklist.md) — readiness gates for repository and community launch.
-- [`docs/audits/`](docs/audits/) — dated security, privacy and hygiene review records.
+- [`docs/audits/`](docs/audits/) — dated security, privacy, recovery and onboarding review records.
 - [`SECURITY.md`](SECURITY.md) — private reporting, exposed-secret response and security scope.
 - [`CODE_OF_CONDUCT.md`](CODE_OF_CONDUCT.md) — participation expectations and fair-response principles.
 
@@ -65,6 +66,6 @@ New readers can use the [`First Commit Kit`](public/onboarding/first-commit-kit.
 
 ## Status
 
-The repository is undergoing a gradual, non-destructive cleanup. Existing history is retained; unclear legacy material is documented before it is moved or removed.
+The repository remains in **Repository Preview**. Current-tree privacy remediation, the temporary no-license decision, branch controls, secret scanning and recovery rehearsal are documented.
 
-The current public phase is **Repository Preview**. A formal repository launch remains blocked by open security, privacy, licensing, recovery and operational controls documented in [`docs/go-live-checklist.md`](docs/go-live-checklist.md). A community or governance launch is not ready.
+Formal repository go-live still waits for review of external stores outside the connected Drive scope, downloaded-copy verification of the encrypted offsite backup and a new dated GO / CONDITIONAL GO / NO-GO decision. A community or governance launch requires the additional controls in [`docs/go-live-checklist.md`](docs/go-live-checklist.md).

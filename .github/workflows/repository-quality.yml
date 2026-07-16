@@ -27,3 +27,6 @@ jobs:
         env:
           BASE_SHA: ${{ github.event_name == 'pull_request' && github.event.pull_request.base.sha || github.event.before }}
         run: python3 scripts/check_repository.py --base "$BASE_SHA"
+
+      - name: Check static site integrity
+        run: python3 scripts/check_site.py
