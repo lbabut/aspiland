@@ -49,7 +49,7 @@ The following items are go-live blockers unless a written risk acceptance explai
 - [x] Require review or an explicit exception record for consequential changes through `docs/repository-operations.md`.
 - [x] Add issue and pull-request templates that prompt for scope, risk, data handling and rollback.
 - [ ] Enable secret scanning and dependency alerts where available.
-- [ ] Add automated checks for broken links, Markdown structure and accidental generated files.
+- [x] Add automated checks for broken links, Markdown structure and accidental generated files through `.github/workflows/repository-quality.yml`.
 - [x] Define who can merge, publish releases and change repository settings in `docs/repository-operations.md`.
 
 ### Release and communication
