@@ -3,10 +3,11 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Aspiland is an open repository for governance, software, research and creative experiments — a public prototype of a digital civilization.">
+  <meta name="description" content="Aspiland is a public repository for governance, software, research and creative experiments — an inspectable prototype of a digital civilization.">
   <meta name="theme-color" content="#080b12">
   <title>Aspiland — Repository Preview</title>
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="sections.css">
   <script src="app.js" defer></script>
 </head>
 <body>
@@ -109,7 +110,7 @@
         <a class="map-card" href="https://github.com/lbabut/aspiland/tree/main/public">
           <span class="map-code">/public</span>
           <h3 data-i18n="map.publicTitle">Prepared for publication</h3>
-          <p data-i18n="map.publicText">Material reviewed for unrestricted public communication.</p>
+          <p data-i18n="map.publicText">Reviewed communication material; public visibility does not create a blanket reuse license.</p>
         </a>
         <a class="map-card" href="https://github.com/lbabut/aspiland/tree/main/archive">
           <span class="map-code">/archive</span>
@@ -150,6 +151,7 @@
         </ol>
         <div class="participation-panel">
           <p class="panel-label" data-i18n="participate.panelLabel">Suggested first paths</p>
+          <a href="https://github.com/lbabut/aspiland/blob/main/public/onboarding/first-commit-kit.md" data-i18n="participate.link0">First Commit Kit <span aria-hidden="true">↗</span></a>
           <a href="https://github.com/lbabut/aspiland/blob/main/CONTRIBUTING.md" data-i18n="participate.link1">Contribution guide <span aria-hidden="true">↗</span></a>
           <a href="https://github.com/lbabut/aspiland/blob/main/docs/glossary.md" data-i18n="participate.link2">Current glossary <span aria-hidden="true">↗</span></a>
           <a href="https://github.com/lbabut/aspiland/issues" data-i18n="participate.link3">Open issues <span aria-hidden="true">↗</span></a>
@@ -159,16 +161,35 @@
     </section>
 
     <section class="section status-section" id="status">
-      <div class="status-card">
+      <div class="section-heading">
+        <p class="eyebrow" data-i18n="status.eyebrow">Current signal</p>
+        <h2 data-i18n="status.title">Repository Preview, not community go-live.</h2>
+      </div>
+      <div class="status-layout">
         <div>
-          <p class="eyebrow" data-i18n="status.eyebrow">Current signal</p>
-          <h2 data-i18n="status.title">Repository Preview, not community go-live.</h2>
-          <p data-i18n="status.text">The structure, public explanations and contribution controls are being prepared. Security, privacy, licensing, recovery and minimal canonical governance still contain open launch gates.</p>
+          <p class="status-copy" data-i18n="status.text">Core repository controls, current-tree privacy review and the temporary no-license position are documented. Formal launch still waits for the remaining external-store review, downloaded-copy backup verification and a new dated decision.</p>
+          <div class="status-actions">
+            <a class="button button-primary" href="https://github.com/lbabut/aspiland/blob/main/docs/current-status.md" data-i18n="status.current">Read current status</a>
+            <a class="button button-secondary" href="https://github.com/lbabut/aspiland/blob/main/docs/go-live-checklist.md" data-i18n="status.checklist">Open go-live checklist</a>
+          </div>
         </div>
-        <div class="status-meter" aria-label="Repository Preview status">
-          <div class="status-row"><span data-i18n="status.repository">Repository structure</span><strong data-i18n="status.ready">Foundation ready</strong></div>
-          <div class="status-row"><span data-i18n="status.publication">Public narrative</span><strong data-i18n="status.progress">In progress</strong></div>
-          <div class="status-row"><span data-i18n="status.community">Community launch</span><strong data-i18n="status.notReady">Not ready</strong></div>
+        <div class="status-grid">
+          <article class="status-card" data-state="ready">
+            <span class="status-label" data-i18n="status.repository">Repository structure</span>
+            <strong data-i18n="status.ready">Foundation ready</strong>
+          </article>
+          <article class="status-card" data-state="ready">
+            <span class="status-label" data-i18n="status.privacy">Current-tree review</span>
+            <strong data-i18n="status.reviewed">Reviewed and remediated</strong>
+          </article>
+          <article class="status-card" data-state="pending">
+            <span class="status-label" data-i18n="status.backup">Offsite backup</span>
+            <strong data-i18n="status.verify">Uploaded; checksum pending</strong>
+          </article>
+          <article class="status-card" data-state="pending">
+            <span class="status-label" data-i18n="status.community">Community launch</span>
+            <strong data-i18n="status.notReady">Not ready</strong>
+          </article>
         </div>
       </div>
     </section>
@@ -181,15 +202,12 @@
   </main>
 
   <footer class="site-footer">
-    <div>
-      <strong>ASPILAND</strong>
-      <span data-i18n="footer.line">An inspectable experiment in governance, technology and imagination.</span>
-    </div>
-    <div class="footer-links">
+    <p class="footer-copy" data-i18n="footer.line">An inspectable experiment in governance, technology and imagination.</p>
+    <nav class="footer-links" aria-label="Repository policies">
       <a href="https://github.com/lbabut/aspiland/blob/main/SECURITY.md">Security</a>
-      <a href="https://github.com/lbabut/aspiland/blob/main/CODE_OF_CONDUCT.md">Code of Conduct</a>
-      <a href="https://github.com/lbabut/aspiland/blob/main/docs/go-live-checklist.md">Go-live status</a>
-    </div>
+      <a href="https://github.com/lbabut/aspiland/blob/main/CODE_OF_CONDUCT.md">Code of conduct</a>
+      <a href="https://github.com/lbabut/aspiland/blob/main/docs/licensing-decision-memo.md">Licensing status</a>
+    </nav>
   </footer>
 </body>
 </html>
