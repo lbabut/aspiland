@@ -1,14 +1,14 @@
 # Aspiland website
 
-Status: Repository Preview site source  
-Last reviewed: 2026-07-12
+Status: formal repository-launch site source  
+Last reviewed: 2026-07-16
 
 This directory contains the dependency-free public landing page for Aspiland.
 
 ## Files
 
 - `index.html` — page structure and public content;
-- `styles.css` — responsive visual system;
+- `styles.css` and `sections.css` — responsive visual system;
 - `app.js` — English and Polish language switching.
 
 ## Design constraints
@@ -18,7 +18,7 @@ This directory contains the dependency-free public landing page for Aspiland.
 - keyboard-accessible navigation and visible focus states;
 - reduced-motion support;
 - prominent experimental and non-sovereign disclaimer;
-- current Repository Preview status rather than a community go-live claim;
+- accurate formal repository-launch status without a community-launch claim;
 - repository sources linked directly for verification.
 
 ## Local preview
@@ -37,13 +37,11 @@ Then open `http://localhost:8080`.
 
 `.github/workflows/pages.yml` packages this directory and deploys it through GitHub Pages after changes reach `main`.
 
-The repository Pages publishing source must be configured to **GitHub Actions** in repository settings before the first deployment can succeed.
-
-Expected project-site address after configuration:
+Expected project-site address:
 
 `https://lbabut.github.io/aspiland/`
 
-A custom domain can be considered after the Repository Preview content and launch gates have been reviewed. Domain purchase and DNS changes are outside the scope of this source directory.
+A custom domain can be considered separately. Domain purchase and DNS changes are outside the scope of this source directory.
 
 ## Content governance
 
