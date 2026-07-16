@@ -1,107 +1,51 @@
 # Aspiland licensing decision memo
 
-Status: decision preparation; non-canonical; no license applied  
-Prepared: 2026-07-16
+Status: owner decision recorded; non-canonical; no license applied  
+Prepared: 2026-07-16  
+Decision recorded: 2026-07-16
 
-This memo reduces the licensing decision to a small set of explicit choices. It is not legal advice and does not grant rights to any repository content.
+This memo records the current licensing choice for Repository Preview. It is not legal advice and does not grant rights to repository content.
 
-## Current position
+## Owner decision
 
-No root `LICENSE`, `LICENSE.md` or `LICENSE.txt` was identified during the repository review. Public visibility on GitHub allows viewing and forking under GitHub's platform terms, but without an explicit license default copyright rules otherwise apply. Publishing a repository is therefore not the same as granting broad permission to reuse, modify or redistribute its contents.
+The repository owner selected **Option C — remain without an explicit license during Repository Preview**.
 
-Aspiland is a mixed repository containing software, documentation, public communication, artwork or brand material, historical records, user-area material and possible third-party content. A single blanket license should not be applied until ownership and provenance are confirmed for the covered paths.
+No root `LICENSE`, `LICENSE.md` or `LICENSE.txt` will be added at this stage. Aspiland must not be described as generally open source or as granting broad permission to reuse, modify or redistribute all repository contents.
 
-## Option A — staged split licensing
+## Reason for the decision
 
-**Recommended working direction, subject to rights review.**
+Aspiland is a mixed repository containing software, documentation, public communication, artwork or brand material, historical records, user-area material and possible third-party content. Ownership, provenance, privacy and contributor rights have not been confirmed for every path.
 
-- Original software intentionally cleared for open-source release: **Apache License 2.0**.
-- Original current documentation and public text intentionally cleared for reuse: **Creative Commons Attribution 4.0 International (CC BY 4.0)**.
-- Brand names, marks and logos: excluded from the content license except for ordinary attribution and descriptive reference.
-- `archive/`, legacy directories, `users/`, historical chat, third-party assets and content with uncertain authorship: **not licensed by the new repository notice** until individually cleared.
-- Generated binaries and runtime state: removed or classified rather than licensed as maintained source.
+Keeping the Repository Preview unlicensed avoids applying a blanket rights grant to material that may require separate permission or exclusion.
 
-Why this may fit:
+## Current operating rules
 
-- Apache-2.0 provides an explicit patent grant and contribution terms for software.
-- CC BY 4.0 is designed for shareable creative and documentary material with attribution.
-- Explicit exclusions avoid pretending that the repository owner can license material whose rights or authorship are uncertain.
+- Use **Repository Preview** wording.
+- Do not claim a repository-wide open-source or open-content license.
+- Do not add a blanket license file.
+- Treat archive, user areas, historical chat, artwork, brands and third-party assets as rights-review areas.
+- Do not assume that accepting a pull request resolves contributor or third-party rights questions.
+- Keep substantial external contribution work limited until contributor terms are defined.
+- Respond to credible ownership, consent or copyright concerns through containment and review.
 
-Costs:
+## What remains permitted operationally
 
-- more files and notices to maintain;
-- GitHub may not display one simple repository-wide license label;
-- contributors need clear path-level guidance.
+The repository may remain publicly readable under the existing Repository Preview decision. Readers may inspect the material and use GitHub's normal collaboration mechanisms, but this decision does not provide a separate project-wide reuse grant.
 
-## Option B — simple permissive code license
+## Revisit triggers
 
-Apply the **MIT License** only to a clearly enumerated set of original software paths and keep all other material excluded until reviewed.
+Review licensing before any of the following:
 
-Why this may fit:
+1. a formal repository launch declaration;
+2. promotion of Aspiland as open source;
+3. acceptance of substantial external contributions;
+4. commercial distribution, merchandise or paid services;
+5. a release containing software intended for third-party deployment;
+6. a request to reuse artwork, documentation, historical material or branding;
+7. completion of a path-level ownership and provenance inventory.
 
-- short and widely understood;
-- permits use, modification, distribution and sublicensing while retaining copyright and license notices;
-- easier administration than Apache-2.0.
+## Possible later direction
 
-Costs:
+After provenance review, licensing may be introduced only for clearly enumerated material controlled by the relevant rights holder. A later staged model could use a software license for cleared code, a content license for cleared documentation and explicit exclusions for archives, user areas, brands, artwork and uncertain third-party material.
 
-- no express patent grant comparable to Apache-2.0;
-- still requires path-level exclusions for mixed historical and creative material;
-- does not solve artwork, brand, archive or publication-rights questions.
-
-## Option C — remain unlicensed during Repository Preview
-
-Keep the current default-copyright position while provenance, privacy and contributor rights are reviewed.
-
-Why this may fit:
-
-- avoids granting rights the owner may not hold;
-- safest for uncertain historical and user-contributed material;
-- compatible with a read-only Repository Preview framing.
-
-Costs:
-
-- external contributors and users do not receive clear permission to reuse or redistribute the work;
-- the repository should not be promoted as open source;
-- contribution expectations remain ambiguous unless submissions include explicit terms.
-
-## Recommended staged decision
-
-1. Keep the repository as **Repository Preview / not yet generally licensed**.
-2. Inventory authorship and third-party material by path.
-3. Identify a narrow first set of files that the repository owner unquestionably controls.
-4. Apply a software license only to cleared software paths.
-5. Apply a content license only to cleared documentation and public materials.
-6. Add explicit exclusions for archive, user areas, third-party assets, brands and uncertain works.
-7. Add contributor terms before accepting substantial external contributions.
-8. Revisit whether the project needs professional legal review before formal launch.
-
-## Owner decision required later
-
-The owner must eventually choose:
-
-- **A:** staged Apache-2.0 + CC BY 4.0 with exclusions;
-- **B:** staged MIT for cleared code, with other content reserved;
-- **C:** no license until more provenance work is complete.
-
-No option should be activated while the owner is impaired, under time pressure or unable to review the covered paths.
-
-## Implementation checklist after a decision
-
-- [ ] confirm the copyright holder name and year range;
-- [ ] list exactly which paths are covered;
-- [ ] list excluded legacy, user, brand and third-party paths;
-- [ ] add the official license text without modifying it;
-- [ ] add `NOTICE` or attribution files where required;
-- [ ] update README and contribution guidance;
-- [ ] document treatment of past and future contributions;
-- [ ] verify dependency and asset licenses;
-- [ ] record the owner decision and reviewed commit;
-- [ ] obtain professional advice if ownership or contributor rights remain unclear.
-
-## Primary references
-
-- GitHub Docs, “Licensing a repository”: https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/licensing-a-repository
-- Open Source Initiative, MIT License: https://opensource.org/license/mit
-- Apache Software Foundation, Apache License 2.0: https://www.apache.org/licenses/LICENSE-2.0
-- Creative Commons, CC BY 4.0: https://creativecommons.org/licenses/by/4.0/
+Any later license activation requires a new dated owner decision identifying the exact covered and excluded paths.
