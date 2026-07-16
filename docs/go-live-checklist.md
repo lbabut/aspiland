@@ -21,14 +21,14 @@ Record the chosen mode before announcing go-live.
 
 The following items are go-live blockers unless a written risk acceptance explains why they are deferred.
 
-- [ ] Run a comprehensive secret scan of the current tree and Git history.
+- [x] Run a comprehensive automated secret scan of the current tree and fetched Git history; see `docs/audits/2026-07-16-secret-history-review.md`.
 - [ ] Search likely external stores and exports for duplicate credentials, including Drive, DevOps, deployment files and backups.
-- [ ] Revoke or rotate every discovered secret; deletion alone is insufficient when a system may still trust it.
+- [ ] Revoke, rotate or otherwise dispose of every credible secret candidate; one removed pre-2023 candidate remains under sanitized investigation in issue #22.
 - [ ] Complete a personal-data review of legacy areas, especially `users/`, `PublicChat.txt`, `Embassies/`, `SharedAssets/`, build output and binary archives.
 - [ ] Decide and document the licensing model for code, documentation, artwork, historical records and contributor-owned material.
 - [x] Publish a security-reporting and exposed-secret procedure in `SECURITY.md`.
 - [x] Identify the primary maintainer, reserved owner decisions and a documented recovery or succession path in `docs/repository-operations.md` and `docs/recovery-checklist.md`.
-- [ ] Confirm that a backup can be restored and that recovery instructions do not depend on one unavailable person or device.
+- [x] Confirm that a restorable Git bundle can be created and restored on a clean runner without the owner's device; see `docs/audits/2026-07-16-recovery-rehearsal.md`. A durable encrypted offsite copy remains open.
 - [x] Keep the experimental, non-sovereign and non-production disclaimer visible in the root README.
 - [ ] Record a go/no-go decision with known residual risks and a rollback or unpublish plan.
 
@@ -48,7 +48,9 @@ The following items are go-live blockers unless a written risk acceptance explai
 - [ ] Protect `main` from accidental force-push and deletion.
 - [x] Require review or an explicit exception record for consequential changes through `docs/repository-operations.md`.
 - [x] Add issue and pull-request templates that prompt for scope, risk, data handling and rollback.
-- [ ] Enable secret scanning and dependency alerts where available.
+- [ ] Confirm GitHub platform secret scanning and dependency alerts are enabled where available.
+- [x] Add a redacted secret guard for every pull request and push to `main` through `.github/workflows/secret-change-guard.yml`.
+- [x] Add an independently callable and scheduled full-history secret audit through `.github/workflows/secret-history-scan.yml`.
 - [x] Add automated checks for broken links, Markdown structure and accidental generated files through `.github/workflows/repository-quality.yml`.
 - [x] Define who can merge, publish releases and change repository settings in `docs/repository-operations.md`.
 
@@ -106,7 +108,10 @@ Do not present Aspiland as an operating governed community until these items are
 Based on the repository review updated on 2026-07-16:
 
 - the structure, disclaimers, contribution rules, change control, archive separation, operational authority, active project inventory and RFC workflow are suitable foundations for a repository launch;
-- the repository should not receive a formal go-live declaration until the secret scan, personal-data review, licensing decision, restore test and go/no-go record are complete;
+- the Git-only recovery mechanism has been successfully rehearsed on a clean runner, but a durable encrypted offsite copy remains open;
+- the automated Git history review found no suspected secrets from 2023 through the review date and one unique removed pre-2023 candidate whose credential disposition remains unresolved;
+- future pull requests and pushes to `main` are covered by a redacted change-range secret guard, while full-history review remains separately scheduled and callable;
+- the repository should not receive a formal go-live declaration until the historical credential candidate, external-store search, personal-data review, licensing decision, durable offsite backup and go/no-go record are resolved or explicitly accepted;
 - a community or governance launch is not ready until a minimal canonical package and the additional controls in section 4 are explicitly accepted and operational.
 
 This assessment is a repository review, not a legal, security-certification or production-readiness guarantee.
